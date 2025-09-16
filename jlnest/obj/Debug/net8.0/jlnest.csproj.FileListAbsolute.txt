@@ -1,0 +1,14 @@
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\bin\Debug\net8.0\jlnest.deps.json
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\bin\Debug\net8.0\jlnest.runtimeconfig.json
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\bin\Debug\net8.0\jlnest.dll
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\bin\Debug\net8.0\jlnest.pdb
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\jlnest.csproj.AssemblyReference.cache
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\jlnest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\jlnest.AssemblyInfoInputs.cache
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\jlnest.AssemblyInfo.cs
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\jlnest.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\jlnest.dll
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\refint\jlnest.dll
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\jlnest.pdb
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\jlnest.genruntimeconfig.cache
+C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\ref\jlnest.dll
