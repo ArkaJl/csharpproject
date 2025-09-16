@@ -73,7 +73,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/User/{id}": {
       "delete": {
         "tags": [
           "User"
@@ -81,10 +83,10 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -93,9 +95,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/User/{id}": {
+      },
       "get": {
         "tags": [
           "User"
@@ -106,8 +106,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],

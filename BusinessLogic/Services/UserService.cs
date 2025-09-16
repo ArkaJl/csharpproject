@@ -7,47 +7,49 @@ namespace BusinessLogic.Services
 {
     public class UserService : IUserService
     {
-        private IRepositoryWrapper _repositoryWrapper;
+        private readonly IRepositoryWrapper _repositoryWrapper;
 
         public UserService(IRepositoryWrapper repositoryWrapper)
         {
             _repositoryWrapper = repositoryWrapper;
         }
 
-        public Task<List<User>> GetAll()
+        public async Task<List<User>> GetAll()
         {
-            return _repositoryWrapper.User.FindAll().ToListAsync();
+            return await _repositoryWrapper.User.FindAll().ToListAsync();
         }
 
-        public async Task<User?> GetById(int id)
+        public async Task<User?> GetById(string id)
         {
             return await _repositoryWrapper.User
-                .FindByCondition(x => x.Id.Equals(id))
+                .FindByCondition(x => x.Id.ToString() == id)
                 .FirstOrDefaultAsync();
         }
 
-        public Task Create(User model)
+
+        public async Task Create(User model)
         {
             _repositoryWrapper.User.Create(model);
-            _repositoryWrapper.Save();
-            return Task.CompletedTask;
+            await _repositoryWrapper.SaveAsync();
         }
 
-        public Task Update(User model)
+        public async Task Update(User model)
         {
             _repositoryWrapper.User.Update(model);
-            _repositoryWrapper.Save();
-            return Task.CompletedTask;
+            await _repositoryWrapper.SaveAsync();
         }
 
-        public Task Delete(int id)
+        public async Task Delete(string id) // Измените на string
         {
-            var user = _repositoryWrapper.User
-                .FindByCondition(x => x.Id.Equals(id)).First();
+            var user = await _repositoryWrapper.User
+                .FindByCondition(x => x.Id.ToString() == id)
+                .FirstOrDefaultAsync();
 
-            _repositoryWrapper.User.Delete(user);
-            _repositoryWrapper.Save();
-            return Task.CompletedTask;
+            if (user != null)
+            {
+                _repositoryWrapper.User.Delete(user);
+                await _repositoryWrapper.SaveAsync();
+            }
         }
     }
 }

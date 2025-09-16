@@ -12,3 +12,18 @@ C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\refin
 C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\DataAccess.pdb
 C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
 C:\Users\Student\Documents\alexeev\WebApplication1\jlnest\obj\Debug\net8.0\ref\DataAccess.dll
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\bin\Debug\net8.0\DataAccess.deps.json
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\bin\Debug\net8.0\DataAccess.dll
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\bin\Debug\net8.0\DataAccess.pdb
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.sourcelink.json
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.dll
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\refint\DataAccess.dll
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.pdb
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\ref\DataAccess.dll

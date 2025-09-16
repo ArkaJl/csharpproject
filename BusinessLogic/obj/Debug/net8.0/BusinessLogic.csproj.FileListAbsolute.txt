@@ -13,3 +13,19 @@ C:\Users\Student\Documents\alexeev\WebApplication1\BusinessLogic\bin\Debug\net8.
 C:\Users\Student\Documents\alexeev\WebApplication1\BusinessLogic\bin\Debug\net8.0\DataAccess.pdb
 C:\Users\Student\Documents\alexeev\WebApplication1\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.AssemblyReference.cache
 C:\Users\Student\Documents\alexeev\WebApplication1\BusinessLogic\obj\Debug\net8.0\Business.CF5D6E35.Up2Date
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\bin\Debug\net8.0\BusinessLogic.deps.json
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\bin\Debug\net8.0\BusinessLogic.dll
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\bin\Debug\net8.0\BusinessLogic.pdb
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\bin\Debug\net8.0\DataAccess.dll
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\bin\Debug\net8.0\DataAccess.pdb
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.AssemblyReference.cache
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\BusinessLogic.AssemblyInfoInputs.cache
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\BusinessLogic.AssemblyInfo.cs
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\BusinessLogic.sourcelink.json
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\Business.CF5D6E35.Up2Date
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\BusinessLogic.dll
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\refint\BusinessLogic.dll
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\BusinessLogic.pdb
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\ref\BusinessLogic.dll

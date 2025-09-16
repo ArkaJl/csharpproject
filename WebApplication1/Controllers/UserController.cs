@@ -40,20 +40,20 @@ namespace BackendApi.Controllers
             return Ok();
         }
 
-        [HttpDelete]
-        public async Task<IActionResult> Delete(int id)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(string id) // string вместо int
         {
             await _userService.Delete(id);
-            return Ok();
+            return NoContent();
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<IActionResult> GetById(string id)
         {
             var user = await _userService.GetById(id);
             if (user == null)
             {
-                return NotFound($"Пользователь с id {id} не найден");
+                return NotFound($"User with id {id} not found");
             }
             return Ok(user);
         }

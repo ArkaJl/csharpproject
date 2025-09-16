@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddDbContext<JlnestContext>(
-    options => options.UseMySQL("Server=localhost;Database=jlnest;User=root;Password=12345;"));
+    options => options.UseMySQL("Server=localhost;Database=jlnest;User=root;Password=1234;"));
 
 
 builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
