@@ -20,11 +20,6 @@ namespace BackendApi.Controllers
             return Ok(await _userService.GetAll());
         }
 
-        //[HttpGet("{id}")]
-        //public async Task<IActionResult> GetById(int id)
-        //{
-        //    return Ok(await _userService.GetById(id));
-        //}
 
         [HttpPost]
         public async Task<IActionResult> Add(User user)

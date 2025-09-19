@@ -19,6 +19,7 @@ builder.Services.AddDbContext<JlnestContext>(
 
 builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUserInventoryService, UserInventoryService>();
 
 var app = builder.Build();
 
