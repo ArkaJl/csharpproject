@@ -15,9 +15,9 @@ public partial class Post
 
     public string? Images { get; set; }
 
-    public int? LikesCount { get; set; }
+    public int LikesCount { get; set; }
 
-    public int? CommentsCount { get; set; }
+    public int CommentsCount { get; set; }
 
     public DateTime? CreatedAt { get; set; }
 

@@ -13,7 +13,7 @@ public partial class Notification
 
     public Guid? SourceId { get; set; }
 
-    public bool? IsRead { get; set; }
+    public bool IsRead { get; set; }
 
     public DateTime? CreatedAt { get; set; }
 

@@ -4,9 +4,9 @@ using DataAccess.Models;
 
 namespace DataAccess.Repositories
 {
-    public class MediumRepository : RepositoryBase<Medium>, IMediumRepository
+    public class MediaRepository : RepositoryBase<Medium>, IMediaRepository
     {
-        public MediumRepository(JlnestContext repositoryContext)
+        public MediaRepository(JlnestContext repositoryContext)
 : base(repositoryContext)
         {
 

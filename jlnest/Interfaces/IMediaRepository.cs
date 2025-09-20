@@ -4,7 +4,7 @@ using DataAccess.Models;
 
 namespace DataAccess.Interfaces
 {
-    public interface ISubscribtionRepository : IRepositoryBase<Subscription>
+    public interface IMediaRepository : IRepositoryBase<Medium>
     {
 
     }

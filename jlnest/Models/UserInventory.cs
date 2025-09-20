@@ -1,19 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DataAccess.Models;
-
-public partial class UserInventory
+namespace DataAccess.Models
 {
-    public Guid UserId { get; set; }
+    [Table("user_inventory")]
+    public class UserInventory
+    {
+        [ForeignKey("User")]
+        public Guid UserId { get; set; }
 
-    public Guid ItemId { get; set; }
+        [ForeignKey("StoreItem")]
+        public Guid ItemId { get; set; }
 
-    public DateTime? PurchasedAt { get; set; }
+        public DateTime PurchasedAt { get; set; }
 
-    public bool? IsEquipped { get; set; }
+        public bool IsEquipped { get; set; }
 
-    public virtual StoreItem Item { get; set; } = null!;
-
-    public virtual User User { get; set; } = null!;
+        public virtual required User User { get; set; }
+        public virtual required StoreItem Item { get; set; }
+    }
 }

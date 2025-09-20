@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BackendApi.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class UserInventoryController : ControllerBase
     {
         private readonly IUserInventoryService _userInventoryService;
@@ -20,36 +21,63 @@ namespace BackendApi.Controllers
             return Ok(await _userInventoryService.GetAll());
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Add(UserInventory UserInventory)
+        [HttpGet("user/{userId}")]
+        public async Task<IActionResult> GetByUserId(string userId)
         {
-            await _userInventoryService.Create(UserInventory);
-            return Ok();
+            var userInventory = await _userInventoryService.GetByUserId(userId);
+            if (userInventory == null || !userInventory.Any())
+            {
+                return NotFound($"No inventory items found for user with id {userId}");
+            }
+            return Ok(userInventory);
+        }
+
+        [HttpGet("user/{userId}/item/{itemId}")]
+        public async Task<IActionResult> GetByUserAndItemId(string userId, string itemId)
+        {
+            var userInventory = await _userInventoryService.GetByUserAndItemId(userId, itemId);
+            if (userInventory == null)
+            {
+                return NotFound($"Inventory item not found for user {userId} and item {itemId}");
+            }
+            return Ok(userInventory);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Add([FromBody] UserInventory userInventory)
+        {
+            await _userInventoryService.Create(userInventory);
+            return CreatedAtAction(nameof(GetByUserAndItemId),
+                new { userId = userInventory.UserId, itemId = userInventory.ItemId },
+                userInventory);
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update(UserInventory UserInventory)
+        public async Task<IActionResult> Update([FromBody] UserInventory userInventory)
         {
-            await _userInventoryService.Update(UserInventory);
+            await _userInventoryService.Update(userInventory);
             return Ok();
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(string id)
+        [HttpDelete("user/{userId}/item/{itemId}")]
+        public async Task<IActionResult> Delete(string userId, string itemId)
         {
-            await _userInventoryService.Delete(id);
+            await _userInventoryService.Delete(userId, itemId);
             return NoContent();
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(string id)
+        [HttpPost("user/{userId}/item/{itemId}/equip")]
+        public async Task<IActionResult> EquipItem(string userId, string itemId)
         {
-            var UserInventory = await _userInventoryService.GetById(id);
-            if (UserInventory == null)
-            {
-                return NotFound($"UserInventory with id {id} not found");
-            }
-            return Ok(UserInventory);
+            await _userInventoryService.EquipItem(userId, itemId);
+            return Ok();
+        }
+
+        [HttpPost("user/{userId}/item/{itemId}/unequip")]
+        public async Task<IActionResult> UnequipItem(string userId, string itemId)
+        {
+            await _userInventoryService.UnequipItem(userId, itemId);
+            return Ok();
         }
     }
 }

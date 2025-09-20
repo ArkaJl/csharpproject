@@ -1,86 +1,230 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\",
+  "WorkspaceRootPath": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\webapplication1\\controllers\\userinventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\userinventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\wrapper\\repositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\businesslogic\\interfaces\\iuserinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\mediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\mediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\interfaces\\imediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\interfaces\\imediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\wrapper\\irepositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\wrapper\\irepositorywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\webapplication1\\controllers\\mediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\mediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\services\\mediaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\mediaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\interfaces\\imediaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\imediaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\webapplication1\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\interfaces\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\webapplication1\\controllers\\storeitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\storeitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\services\\storeitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\storeitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\interfaces\\istoreitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\istoreitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\webapplication1\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\interfaces\\imessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\imessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\webapplication1\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\webapplication1\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\interfaces\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\models\\useractivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\models\\useractivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\subscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\subscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\webapplication1\\controllers\\communitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\communitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\interfaces\\isubscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\interfaces\\isubscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\services\\communityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\communityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\interfaces\\icommunityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\icommunityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\webapplication1\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\interfaces\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\webapplication1\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\services\\albumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\albumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\interfaces\\ialbumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\ialbumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\interfaces\\iuserinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\iuserinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\businesslogic\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\services\\userinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\userinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\models\\userinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\models\\userinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\webapplication1\\controllers\\userinventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\userinventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\businesslogic\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\userinventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\userinventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\userinventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\useractivityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\useractivityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\subscribtionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\subscribtionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\storeitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\storeitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\storeitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\mediumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\mediumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\communityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\communityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\communityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\communityoverviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\communityoverviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\communityoverviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\chatrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\chatrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\chatrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\chatparticipantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\my storage\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\repositories\\chatparticipantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\chatparticipantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\albumrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\albumrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|c:\\users\\student\\documents\\alexeev\\a\\csharpproject\\jlnest\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}|jlnest\\DataAccess.csproj|solutionrelative:jlnest\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,267 +234,717 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserInventoryController.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\WebApplication1\\Controllers\\UserInventoryController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\UserInventoryController.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\WebApplication1\\Controllers\\UserInventoryController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\UserInventoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:58:09.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IUserInventoryService.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\BusinessLogic\\Interfaces\\IUserInventoryService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IUserInventoryService.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\BusinessLogic\\Interfaces\\IUserInventoryService.cs",
-              "RelativeToolTip": "BusinessLogic\\Interfaces\\IUserInventoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:57:44.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\BusinessLogic\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IUserService.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\BusinessLogic\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "BusinessLogic\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Title": "IMediaRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Interfaces\\IMediaRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Interfaces\\IMediaRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Interfaces\\IMediaRepository.cs",
+              "RelativeToolTip": "jlnest\\Interfaces\\IMediaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:53:35.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\WebApplication1\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\WebApplication1\\Controllers\\UserController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:49:54.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserInventoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\UserInventoryRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\UserInventoryRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\UserInventoryRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\UserInventoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:46:39.559Z",
+              "WhenOpened": "2025-09-20T11:45:59.315Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UserActivityRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\UserActivityRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\UserActivityRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\UserActivityRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\UserActivityRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "MediaController.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\MediaController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\MediaController.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\MediaController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\MediaController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAIwFkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:45:36.908Z",
+              "WhenOpened": "2025-09-20T11:44:53.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "TransactionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\TransactionRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\TransactionRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\TransactionRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\TransactionRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "MediaService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\MediaService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\MediaService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\MediaService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\MediaService.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAUwGUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:45:08.052Z",
+              "WhenOpened": "2025-09-20T11:44:34.158Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SubscribtionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\SubscribtionRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\SubscribtionRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\SubscribtionRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\SubscribtionRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IRepositoryWrapper.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Wrapper\\IRepositoryWrapper.cs",
+              "RelativeDocumentMoniker": "jlnest\\Wrapper\\IRepositoryWrapper.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Wrapper\\IRepositoryWrapper.cs",
+              "RelativeToolTip": "jlnest\\Wrapper\\IRepositoryWrapper.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:44:36.684Z",
+              "WhenOpened": "2025-09-20T07:58:56.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "StoreItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\StoreItemRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\StoreItemRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\StoreItemRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\StoreItemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:43:58.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PostRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\PostRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\PostRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\PostRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\PostRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:43:28.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NotificationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\NotificationRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\NotificationRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\NotificationRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\NotificationRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:42:58.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MessageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\MessageRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\MessageRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\MessageRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\MessageRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:42:28.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MediumRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\MediumRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\MediumRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\MediumRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\MediumRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "MediaRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\MediaRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\MediaRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\MediaRepository.cs",
+              "RelativeToolTip": "jlnest\\Repositories\\MediaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-19T07:41:40.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CommunityRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\CommunityRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\CommunityRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\CommunityRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\CommunityRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "RepositoryWrapper.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Wrapper\\RepositoryWrapper.cs",
+              "RelativeDocumentMoniker": "jlnest\\Wrapper\\RepositoryWrapper.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Wrapper\\RepositoryWrapper.cs",
+              "RelativeToolTip": "jlnest\\Wrapper\\RepositoryWrapper.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAADwv7gAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:41:04.238Z",
+              "WhenOpened": "2025-09-20T08:06:35.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T08:28:08.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IMediaService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IMediaService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IMediaService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IMediaService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IMediaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T11:44:20.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ITransactionService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\ITransactionService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\ITransactionService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\ITransactionService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\ITransactionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T11:37:49.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\TransactionService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\TransactionService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\TransactionService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\TransactionService.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAUwKgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T11:38:05.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\TransactionController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAUwGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T11:38:22.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IStoreItemService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IStoreItemService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IStoreItemService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IStoreItemService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IStoreItemService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T11:27:37.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StoreItemService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\StoreItemService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\StoreItemService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\StoreItemService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\StoreItemService.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAUwFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T11:27:54.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StoreItemController.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\StoreItemController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\StoreItemController.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\StoreItemController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\StoreItemController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAUwFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T11:28:28.315Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "CommunityOverviewRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\CommunityOverviewRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\CommunityOverviewRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\CommunityOverviewRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\CommunityOverviewRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\MessageService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\MessageService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\MessageService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\MessageService.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAUwHgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:23:53.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CommentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\CommentRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\CommentRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\CommentRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\CommentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:21:33.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ChatRepository .cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\ChatRepository .cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\ChatRepository .cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\ChatRepository .cs",
-              "RelativeToolTip": "jlnest\\Repositories\\ChatRepository .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:19:37.789Z",
+              "WhenOpened": "2025-09-20T11:20:55.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "ChatParticipantRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\ChatParticipantRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\ChatParticipantRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\ChatParticipantRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\ChatParticipantRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Title": "IMessageService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IMessageService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IMessageService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IMessageService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IMessageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:17:55.525Z",
+              "WhenOpened": "2025-09-20T11:20:43.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MessageController.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\MessageController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\MessageController.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\MessageController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\MessageController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAUwGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T11:21:17.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "jlnest\\Models\\Message.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Models\\Message.cs",
+              "RelativeToolTip": "jlnest\\Models\\Message.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T11:23:15.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "AlbumRepository .cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\AlbumRepository .cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\AlbumRepository .cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\AlbumRepository .cs",
-              "RelativeToolTip": "jlnest\\Repositories\\AlbumRepository .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\NotificationService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\NotificationService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\NotificationService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwHEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:16:00.651Z",
+              "WhenOpened": "2025-09-20T10:32:48.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\NotificationController.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\NotificationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T10:33:08.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "jlnest\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\a\\csharpproject\\jlnest\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "jlnest\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "jlnest\\Models\\Notification.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Models\\Notification.cs",
+              "RelativeToolTip": "jlnest\\Models\\Notification.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T07:14:21.603Z",
+              "WhenOpened": "2025-09-20T10:36:38.01Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\INotificationService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\INotificationService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\INotificationService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\INotificationService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wBEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T10:29:34.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "jlnest\\Models\\Post.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Models\\Post.cs",
+              "RelativeToolTip": "jlnest\\Models\\Post.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T10:14:31.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IPostService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IPostService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IPostService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IPostService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IPostService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T10:10:17.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PostService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\PostService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\PostService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\PostService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\PostService.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAwHMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T10:10:36.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\PostController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAiwGcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T10:11:02.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserActivity.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Models\\UserActivity.cs",
+              "RelativeDocumentMoniker": "jlnest\\Models\\UserActivity.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Models\\UserActivity.cs",
+              "RelativeToolTip": "jlnest\\Models\\UserActivity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T10:05:49.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CommunityController.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\CommunityController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\CommunityController.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\CommunityController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\CommunityController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAuwGcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:57:42.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SubscriptionRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\SubscriptionRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\SubscriptionRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\SubscriptionRepository.cs",
+              "RelativeToolTip": "jlnest\\Repositories\\SubscriptionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:44:36.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ISubscriptionRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Interfaces\\ISubscriptionRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Interfaces\\ISubscriptionRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Interfaces\\ISubscriptionRepository.cs",
+              "RelativeToolTip": "jlnest\\Interfaces\\ISubscriptionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:59:27.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CommunityService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\CommunityService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\CommunityService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\CommunityService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\CommunityService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:57:06.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ICommunityService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\ICommunityService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\ICommunityService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\ICommunityService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\ICommunityService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:56:44.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IAlbumService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IAlbumService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IAlbumService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IAlbumService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IAlbumService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:37:45.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IChatService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IChatService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IChatService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IChatService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IChatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:45:36.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\ChatService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\ChatService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\ChatService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\ChatService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwHcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:45:56.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAUwGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:46:46.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AlbumService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\AlbumService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\AlbumService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\AlbumService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\AlbumService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:38:04.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AlbumController.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\AlbumController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AlbumController.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\AlbumController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\AlbumController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAUwEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:38:51.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IUserInventoryService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IUserInventoryService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IUserInventoryService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IUserInventoryService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IUserInventoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:57:44.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "UserInventoryController.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\UserInventoryController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\UserInventoryController.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\UserInventoryController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\UserInventoryController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:58:09.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UserInventory.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Models\\UserInventory.cs",
+              "RelativeDocumentMoniker": "jlnest\\Models\\UserInventory.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Models\\UserInventory.cs",
+              "RelativeToolTip": "jlnest\\Models\\UserInventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T08:16:41.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserInventoryService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\UserInventoryService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserInventoryService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\UserInventoryService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\UserInventoryService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowCQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T08:28:42.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T08:29:02.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\BusinessLogic\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "BusinessLogic\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:53:35.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:49:54.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "UserInventoryRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\UserInventoryRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\UserInventoryRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\UserInventoryRepository.cs",
+              "RelativeToolTip": "jlnest\\Repositories\\UserInventoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:46:39.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "TransactionRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\TransactionRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\TransactionRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\TransactionRepository.cs",
+              "RelativeToolTip": "jlnest\\Repositories\\TransactionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:45:08.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "StoreItemRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\StoreItemRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\StoreItemRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\StoreItemRepository.cs",
+              "RelativeToolTip": "jlnest\\Repositories\\StoreItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:43:58.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\PostRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\PostRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\PostRepository.cs",
+              "RelativeToolTip": "jlnest\\Repositories\\PostRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:43:28.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "NotificationRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\NotificationRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\NotificationRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\NotificationRepository.cs",
+              "RelativeToolTip": "jlnest\\Repositories\\NotificationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:42:58.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "MessageRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\MessageRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\MessageRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\MessageRepository.cs",
+              "RelativeToolTip": "jlnest\\Repositories\\MessageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:42:28.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "CommunityRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\CommunityRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\CommunityRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\CommunityRepository.cs",
+              "RelativeToolTip": "jlnest\\Repositories\\CommunityRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:41:04.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CommunityOverviewRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\CommunityOverviewRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\CommunityOverviewRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\CommunityOverviewRepository.cs",
+              "RelativeToolTip": "jlnest\\Repositories\\CommunityOverviewRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:23:53.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CommentRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\CommentRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\CommentRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\CommentRepository.cs",
+              "RelativeToolTip": "jlnest\\Repositories\\CommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:21:33.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ChatRepository .cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\ChatRepository .cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\ChatRepository .cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\ChatRepository .cs",
+              "RelativeToolTip": "jlnest\\Repositories\\ChatRepository .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:19:37.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ChatParticipantRepository.cs",
+              "DocumentMoniker": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\ChatParticipantRepository.cs",
+              "RelativeDocumentMoniker": "jlnest\\Repositories\\ChatParticipantRepository.cs",
+              "ToolTip": "C:\\My STORAGE\\\u0440\u0430\u0431\u043E\u0442\u0430\\csharp\\csharpproject\\jlnest\\Repositories\\ChatParticipantRepository.cs",
+              "RelativeToolTip": "jlnest\\Repositories\\ChatParticipantRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:17:55.525Z"
             }
           ]
         }
