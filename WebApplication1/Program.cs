@@ -5,9 +5,12 @@ using Domain.Interfaces.Services;
 using Domain.Models;
 using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
@@ -17,10 +20,34 @@ builder.Services.AddControllers()
     });
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "JLNest Social Network API",
+        Description = "API для социальной сети JLNest с сообществами, чатами и магазино",
+        Contact = new OpenApiContact
+        {
+            Name = "JLNest Support",
+            Url = new Uri("https://example.com/contact")
+        },
+        License = new OpenApiLicense
+        {
+            Name = "MIT License",
+            Url = new Uri("https://example.com/license")
+        }
+    });
+    //using system.reflection
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+});
 
-builder.Services.AddDbContext<JlnestContext>(
-    options => options.UseMySQL("Server=localhost;Port=3306;Database=jlnest;User=root;Password=1234;"));
+builder.Services.AddDbContext<JlnestContext>(options =>
+    options.UseMySQL(
+        "Server=localhost;Port=3306;Database=jlnest;User=root;Password=1234;",
+        b => b.MigrationsAssembly("DataAccess")
+    ));
 
 builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
 builder.Services.AddScoped<IUserService, UserService>();

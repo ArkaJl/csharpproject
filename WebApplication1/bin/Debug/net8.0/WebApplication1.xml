@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication1</name>
+    </assembly>
+    <members>
+        <member name="T:BackendApi.Controllers.UserController">
+            <summary>
+            Контроллер для управления пользователями
+            </summary>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.GetAll">
+            <summary>
+            Получить всех пользователей
+            </summary>
+            <returns>Список всех пользователей</returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.Add(Domain.Models.User)">
+             <summary>
+             Создать нового пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /User
+                 {
+                     "username": "johndoe",
+                     "email": "john@example.com",
+                     "passwordHash": "hashed_password",
+                     "avatarUrl": "https://example.com/avatar.jpg",
+                     "coins": 100,
+                     "status": "Online"
+                 }
+            
+             </remarks>
+             <param name="user">Данные пользователя</param>
+             <returns>Созданный пользователь</returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.Update(Domain.Models.User)">
+            <summary>
+            Обновить данные пользователя
+            </summary>
+            <param name="id">ID пользователя</param>
+            <param name="user">Обновленные данные</param>
+            <returns>Обновленный пользователь</returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.Delete(System.String)">
+            <summary>
+            Удалить пользователя
+            </summary>
+            <param name="id">ID пользователя</param>
+            <returns>Статус операции</returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UserController.GetById(System.String)">
+            <summary>
+            Получить пользователя по ID
+            </summary>
+            <param name="id">ID пользователя</param>
+            <returns>Данные пользователя</returns>
+        </member>
+    </members>
+</doc>

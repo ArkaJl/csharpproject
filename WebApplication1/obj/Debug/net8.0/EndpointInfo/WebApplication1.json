@@ -1,8 +1,17 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "WebApplication1",
-    "version": "1.0"
+    "title": "JLNest Social Network API",
+    "description": "API для социальной сети JLNest с сообществами, чатами и магазино",
+    "contact": {
+      "name": "JLNest Support",
+      "url": "https://example.com/contact"
+    },
+    "license": {
+      "name": "MIT License",
+      "url": "https://example.com/license"
+    },
+    "version": "v1"
   },
   "paths": {
     "/api/Album": {
@@ -2140,6 +2149,7 @@
         "tags": [
           "User"
         ],
+        "summary": "Получить всех пользователей",
         "responses": {
           "200": {
             "description": "OK"
@@ -2150,7 +2160,10 @@
         "tags": [
           "User"
         ],
+        "summary": "Создать нового пользователя",
+        "description": "Пример запроса:\r\n            \r\n    POST /User\r\n    {\r\n        \"username\": \"johndoe\",\r\n        \"email\": \"john@example.com\",\r\n        \"passwordHash\": \"hashed_password\",\r\n        \"avatarUrl\": \"https://example.com/avatar.jpg\",\r\n        \"coins\": 100,\r\n        \"status\": \"Online\"\r\n    }",
         "requestBody": {
+          "description": "Данные пользователя",
           "content": {
             "application/json": {
               "schema": {
@@ -2179,7 +2192,9 @@
         "tags": [
           "User"
         ],
+        "summary": "Обновить данные пользователя",
         "requestBody": {
+          "description": "Обновленные данные",
           "content": {
             "application/json": {
               "schema": {
@@ -2210,10 +2225,12 @@
         "tags": [
           "User"
         ],
+        "summary": "Удалить пользователя",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID пользователя",
             "required": true,
             "schema": {
               "type": "string"
@@ -2230,10 +2247,12 @@
         "tags": [
           "User"
         ],
+        "summary": "Получить пользователя по ID",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID пользователя",
             "required": true,
             "schema": {
               "type": "string"
