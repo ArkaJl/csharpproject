@@ -1,5 +1,6 @@
-﻿using DataAccess.Interfaces;
-using DataAccess.Models;
+﻿
+using Domain.Interfaces.Repositories;
+using Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

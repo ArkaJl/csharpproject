@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{BD0CB1DC-48D2-48F6-B059-C3EC13B237A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "jlnest\DataAccess.csproj", "{8BBFE23F-C6B4-422C-A8B4-35311527D3C8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9B61BA2-79C3-4DC7-A113-B7227899E825} = {A9B61BA2-79C3-4DC7-A113-B7227899E825}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{A9B61BA2-79C3-4DC7-A113-B7227899E825}"
 EndProject

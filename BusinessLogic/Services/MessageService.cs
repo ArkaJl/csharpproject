@@ -1,6 +1,7 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+﻿
+using Domain.Interfaces.Services;
+using Domain.Models;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
@@ -53,14 +54,14 @@ namespace BusinessLogic.Services
 
         public async Task<Message> Create(Message message)
         {
-            _repositoryWrapper.Message.Create(message);
+            await _repositoryWrapper.Message.Create(message);
             await _repositoryWrapper.SaveAsync();
             return message;
         }
 
         public async Task<Message> Update(Message message)
         {
-            _repositoryWrapper.Message.Update(message);
+            await _repositoryWrapper.Message.Update(message);
             await _repositoryWrapper.SaveAsync();
             return message;
         }
@@ -73,7 +74,7 @@ namespace BusinessLogic.Services
 
             if (message != null)
             {
-                _repositoryWrapper.Message.Delete(message);
+                await _repositoryWrapper.Message.Delete(message);
                 await _repositoryWrapper.SaveAsync();
             }
         }
@@ -87,7 +88,7 @@ namespace BusinessLogic.Services
             if (message != null)
             {
                 message.ReadStatus = true;
-                _repositoryWrapper.Message.Update(message);
+                await _repositoryWrapper.Message.Update(message);
                 await _repositoryWrapper.SaveAsync();
             }
         }
@@ -103,7 +104,7 @@ namespace BusinessLogic.Services
             foreach (var message in messages)
             {
                 message.ReadStatus = true;
-                _repositoryWrapper.Message.Update(message);
+                await _repositoryWrapper.Message.Update(message);
             }
 
             await _repositoryWrapper.SaveAsync();

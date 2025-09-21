@@ -1,6 +1,7 @@
-﻿using DataAccess.Interfaces;
-using DataAccess.Models;
-using DataAccess.Repositories;
+﻿using DataAccess.Repositories;
+using Domain.Interfaces.Repositories;
+using Domain.Models;
+using Domain.Wrapper;
 using System;
 
 namespace DataAccess.Wrapper

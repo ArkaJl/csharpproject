@@ -1,6 +1,7 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+﻿
+using Domain.Interfaces.Services;
+using Domain.Models;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
@@ -29,17 +30,17 @@ namespace BusinessLogic.Services
 
         public async Task Create(User model)
         {
-            _repositoryWrapper.User.Create(model);
+            await _repositoryWrapper.User.Create(model);
             await _repositoryWrapper.SaveAsync();
         }
 
         public async Task Update(User model)
         {
-            _repositoryWrapper.User.Update(model);
+            await _repositoryWrapper.User.Update(model);
             await _repositoryWrapper.SaveAsync();
         }
 
-        public async Task Delete(string id) // Измените на string
+        public async Task Delete(string id)
         {
             var user = await _repositoryWrapper.User
                 .FindByCondition(x => x.Id.ToString() == id)
@@ -47,7 +48,7 @@ namespace BusinessLogic.Services
 
             if (user != null)
             {
-                _repositoryWrapper.User.Delete(user);
+                await _repositoryWrapper.User.Delete(user);
                 await _repositoryWrapper.SaveAsync();
             }
         }

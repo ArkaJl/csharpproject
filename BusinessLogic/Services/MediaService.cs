@@ -1,6 +1,7 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+﻿
+using Domain.Interfaces.Services;
+using Domain.Models;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
@@ -64,14 +65,14 @@ namespace BusinessLogic.Services
 
         public async Task<Medium> Create(Medium medium)
         {
-            _repositoryWrapper.Media.Create(medium);
+            await _repositoryWrapper.Media.Create(medium);
             await _repositoryWrapper.SaveAsync();
             return medium;
         }
 
         public async Task<Medium> Update(Medium medium)
         {
-            _repositoryWrapper.Media.Update(medium);
+            await _repositoryWrapper.Media.Update(medium);
             await _repositoryWrapper.SaveAsync();
             return medium;
         }
@@ -84,7 +85,7 @@ namespace BusinessLogic.Services
 
             if (medium != null)
             {
-                _repositoryWrapper.Media.Delete(medium);
+                await _repositoryWrapper.Media.Delete(medium);
                 await _repositoryWrapper.SaveAsync();
             }
         }

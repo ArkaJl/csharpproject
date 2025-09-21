@@ -1,6 +1,7 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+﻿
+using Domain.Interfaces.Services;
+using Domain.Models;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
@@ -50,14 +51,14 @@ namespace BusinessLogic.Services
 
         public async Task<Notification> Create(Notification notification)
         {
-            _repositoryWrapper.Notification.Create(notification);
+            await _repositoryWrapper.Notification.Create(notification);
             await _repositoryWrapper.SaveAsync();
             return notification;
         }
 
         public async Task<Notification> Update(Notification notification)
         {
-            _repositoryWrapper.Notification.Update(notification);
+            await _repositoryWrapper.Notification.Update(notification);
             await _repositoryWrapper.SaveAsync();
             return notification;
         }
@@ -70,7 +71,7 @@ namespace BusinessLogic.Services
 
             if (notification != null)
             {
-                _repositoryWrapper.Notification.Delete(notification);
+                await _repositoryWrapper.Notification.Delete(notification);
                 await _repositoryWrapper.SaveAsync();
             }
         }
@@ -84,7 +85,7 @@ namespace BusinessLogic.Services
             if (notification != null)
             {
                 notification.IsRead = true;
-                _repositoryWrapper.Notification.Update(notification);
+                await _repositoryWrapper.Notification.Update(notification);
                 await _repositoryWrapper.SaveAsync();
             }
         }
@@ -98,7 +99,7 @@ namespace BusinessLogic.Services
             foreach (var notification in notifications)
             {
                 notification.IsRead = true;
-                _repositoryWrapper.Notification.Update(notification);
+                await _repositoryWrapper.Notification.Update(notification);
             }
 
             await _repositoryWrapper.SaveAsync();

@@ -1,6 +1,7 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+﻿
+using Domain.Interfaces.Services;
+using Domain.Models;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
@@ -42,14 +43,14 @@ namespace BusinessLogic.Services
 
         public async Task<Album> Create(Album album)
         {
-            _repositoryWrapper.Album.Create(album);
+            await _repositoryWrapper.Album.Create(album);
             await _repositoryWrapper.SaveAsync();
             return album;
         }
 
         public async Task<Album> Update(Album album)
         {
-            _repositoryWrapper.Album.Update(album);
+            await _repositoryWrapper.Album.Update(album);
             await _repositoryWrapper.SaveAsync();
             return album;
         }
@@ -62,7 +63,7 @@ namespace BusinessLogic.Services
 
             if (album != null)
             {
-                _repositoryWrapper.Album.Delete(album);
+                await _repositoryWrapper.Album.Delete(album);
                 await _repositoryWrapper.SaveAsync();
             }
         }

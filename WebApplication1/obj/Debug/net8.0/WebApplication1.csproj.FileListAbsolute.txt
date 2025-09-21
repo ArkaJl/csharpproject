@@ -320,3 +320,5 @@ C:\Users\Student\Documents\alexeev\a\csharpproject\WebApplication1\obj\Debug\net
 C:\Users\Student\Documents\alexeev\a\csharpproject\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\Student\Documents\alexeev\a\csharpproject\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Student\Documents\alexeev\a\csharpproject\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\My STORAGE\работа\csharp\csharpproject\WebApplication1\bin\Debug\net8.0\Domain.dll
+C:\My STORAGE\работа\csharp\csharpproject\WebApplication1\bin\Debug\net8.0\Domain.pdb

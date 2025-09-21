@@ -1,8 +1,9 @@
-using BusinessLogic.Interfaces;
+
 using BusinessLogic.Services;
-using DataAccess.Interfaces;
 using DataAccess.Wrapper;
-using DataAccess.Models;
+using Domain.Interfaces.Services;
+using Domain.Models;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 

@@ -9,3 +9,16 @@ C:\Users\Student\Documents\alexeev\WebApplication1\Domain\obj\Debug\net8.0\Domai
 C:\Users\Student\Documents\alexeev\WebApplication1\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Users\Student\Documents\alexeev\WebApplication1\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\Student\Documents\alexeev\WebApplication1\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\My STORAGE\работа\csharp\csharpproject\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\My STORAGE\работа\csharp\csharpproject\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\My STORAGE\работа\csharp\csharpproject\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\My STORAGE\работа\csharp\csharpproject\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\My STORAGE\работа\csharp\csharpproject\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\My STORAGE\работа\csharp\csharpproject\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\My STORAGE\работа\csharp\csharpproject\Domain\obj\Debug\net8.0\Domain.dll
+C:\My STORAGE\работа\csharp\csharpproject\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\My STORAGE\работа\csharp\csharpproject\Domain\obj\Debug\net8.0\Domain.pdb
+C:\My STORAGE\работа\csharp\csharpproject\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\My STORAGE\работа\csharp\csharpproject\Domain\bin\Debug\net8.0\Domain.dll
+C:\My STORAGE\работа\csharp\csharpproject\Domain\bin\Debug\net8.0\Domain.pdb
+C:\My STORAGE\работа\csharp\csharpproject\Domain\obj\Debug\net8.0\ref\Domain.dll

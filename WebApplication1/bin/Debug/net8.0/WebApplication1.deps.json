@@ -724,7 +724,7 @@
       },
       "BusinessLogic/1.0.0": {
         "dependencies": {
-          "DataAccess": "1.0.0"
+          "Domain": "1.0.0"
         },
         "runtime": {
           "BusinessLogic.dll": {
@@ -735,11 +735,24 @@
       },
       "DataAccess/1.0.0": {
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.20",
           "MySql.EntityFrameworkCore": "8.0.17"
         },
         "runtime": {
           "DataAccess.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.20",
+          "MySql.EntityFrameworkCore": "8.0.17"
+        },
+        "runtime": {
+          "Domain.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1277,6 +1290,11 @@
       "sha512": ""
     },
     "DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

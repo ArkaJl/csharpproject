@@ -1,6 +1,7 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+﻿
+using Domain.Interfaces.Services;
+using Domain.Models;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
@@ -17,8 +18,8 @@ namespace BusinessLogic.Services
         public async Task<List<UserInventory>> GetAll()
         {
             return await _repositoryWrapper.UserInventory.FindAll()
-                .Include(ui => ui.Item) // Включаем навигационное свойство StoreItem
-                .Include(ui => ui.User)      // Включаем навигационное свойство User (если нужно)
+                .Include(ui => ui.Item)
+                .Include(ui => ui.User)
                 .ToListAsync();
         }
 
@@ -40,13 +41,13 @@ namespace BusinessLogic.Services
 
         public async Task Create(UserInventory model)
         {
-            _repositoryWrapper.UserInventory.Create(model);
+            await _repositoryWrapper.UserInventory.Create(model);
             await _repositoryWrapper.SaveAsync();
         }
 
         public async Task Update(UserInventory model)
         {
-            _repositoryWrapper.UserInventory.Update(model);
+            await _repositoryWrapper.UserInventory.Update(model);
             await _repositoryWrapper.SaveAsync();
         }
 
@@ -58,7 +59,7 @@ namespace BusinessLogic.Services
 
             if (userInventory != null)
             {
-                _repositoryWrapper.UserInventory.Delete(userInventory);
+                await _repositoryWrapper.UserInventory.Delete(userInventory);
                 await _repositoryWrapper.SaveAsync();
             }
         }
@@ -72,7 +73,7 @@ namespace BusinessLogic.Services
             if (userInventory != null)
             {
                 userInventory.IsEquipped = true;
-                _repositoryWrapper.UserInventory.Update(userInventory);
+                await _repositoryWrapper.UserInventory.Update(userInventory);
                 await _repositoryWrapper.SaveAsync();
             }
         }
@@ -86,7 +87,7 @@ namespace BusinessLogic.Services
             if (userInventory != null)
             {
                 userInventory.IsEquipped = false;
-                _repositoryWrapper.UserInventory.Update(userInventory);
+                await _repositoryWrapper.UserInventory.Update(userInventory);
                 await _repositoryWrapper.SaveAsync();
             }
         }

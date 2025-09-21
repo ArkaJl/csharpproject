@@ -42,3 +42,6 @@ C:\Users\Student\Documents\alexeev\a\csharpproject\jlnest\obj\Debug\net8.0\refin
 C:\Users\Student\Documents\alexeev\a\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.pdb
 C:\Users\Student\Documents\alexeev\a\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
 C:\Users\Student\Documents\alexeev\a\csharpproject\jlnest\obj\Debug\net8.0\ref\DataAccess.dll
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\bin\Debug\net8.0\Domain.dll
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\bin\Debug\net8.0\Domain.pdb
+C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.csproj.Up2Date

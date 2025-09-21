@@ -1,6 +1,7 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+﻿
+using Domain.Interfaces.Services;
+using Domain.Models;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
@@ -61,14 +62,14 @@ namespace BusinessLogic.Services
 
         public async Task<Post> Create(Post post)
         {
-            _repositoryWrapper.Post.Create(post);
+            await _repositoryWrapper.Post.Create(post);
             await _repositoryWrapper.SaveAsync();
             return post;
         }
 
         public async Task<Post> Update(Post post)
         {
-            _repositoryWrapper.Post.Update(post);
+            await _repositoryWrapper.Post.Update(post);
             await _repositoryWrapper.SaveAsync();
             return post;
         }
@@ -81,7 +82,7 @@ namespace BusinessLogic.Services
 
             if (post != null)
             {
-                _repositoryWrapper.Post.Delete(post);
+                await _repositoryWrapper.Post.Delete(post);
                 await _repositoryWrapper.SaveAsync();
             }
         }
@@ -95,7 +96,7 @@ namespace BusinessLogic.Services
             if (post != null)
             {
                 post.LikesCount++;
-                _repositoryWrapper.Post.Update(post);
+                await _repositoryWrapper.Post.Update(post);
                 await _repositoryWrapper.SaveAsync();
                 return post.LikesCount;
             }
@@ -112,7 +113,7 @@ namespace BusinessLogic.Services
             if (post != null && post.LikesCount > 0)
             {
                 post.LikesCount--;
-                _repositoryWrapper.Post.Update(post);
+                await _repositoryWrapper.Post.Update(post);
                 await _repositoryWrapper.SaveAsync();
                 return post.LikesCount;
             }
@@ -129,10 +130,10 @@ namespace BusinessLogic.Services
             if (post != null)
             {
                 comment.PostId = Guid.Parse(postId);
-                _repositoryWrapper.Comment.Create(comment);
+                await _repositoryWrapper.Comment.Create(comment);
 
                 post.CommentsCount++;
-                _repositoryWrapper.Post.Update(post);
+                await _repositoryWrapper.Post.Update(post);
 
                 await _repositoryWrapper.SaveAsync();
                 return post.CommentsCount;

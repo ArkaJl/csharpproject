@@ -1,6 +1,7 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+﻿
+using Domain.Interfaces.Services;
+using Domain.Models;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
@@ -50,14 +51,14 @@ namespace BusinessLogic.Services
 
         public async Task<Community> Create(Community community)
         {
-            _repositoryWrapper.Community.Create(community);
+            await _repositoryWrapper.Community.Create(community);
             await _repositoryWrapper.SaveAsync();
             return community;
         }
 
         public async Task<Community> Update(Community community)
         {
-            _repositoryWrapper.Community.Update(community);
+            await _repositoryWrapper.Community.Update(community);
             await _repositoryWrapper.SaveAsync();
             return community;
         }
@@ -70,7 +71,7 @@ namespace BusinessLogic.Services
 
             if (community != null)
             {
-                _repositoryWrapper.Community.Delete(community);
+                await _repositoryWrapper.Community.Delete(community);
                 await _repositoryWrapper.SaveAsync();
             }
         }
@@ -85,7 +86,7 @@ namespace BusinessLogic.Services
                 JoinedAt = DateTime.UtcNow
             };
 
-            _repositoryWrapper.Subscription.Create(subscription);
+            await _repositoryWrapper.Subscription.Create(subscription);
 
             // Увеличиваем счетчик участников
             var community = await _repositoryWrapper.Community
@@ -95,7 +96,7 @@ namespace BusinessLogic.Services
             if (community != null)
             {
                 community.MemberCount++;
-                _repositoryWrapper.Community.Update(community);
+                await _repositoryWrapper.Community.Update(community);
             }
 
             await _repositoryWrapper.SaveAsync();
@@ -109,7 +110,7 @@ namespace BusinessLogic.Services
 
             if (subscription != null)
             {
-                _repositoryWrapper.Subscription.Delete(subscription);
+                await _repositoryWrapper.Subscription.Delete(subscription);
 
                 // Уменьшаем счетчик участников
                 var community = await _repositoryWrapper.Community
@@ -119,7 +120,7 @@ namespace BusinessLogic.Services
                 if (community != null && community.MemberCount > 0)
                 {
                     community.MemberCount--;
-                    _repositoryWrapper.Community.Update(community);
+                    await _repositoryWrapper.Community.Update(community);
                 }
 
                 await _repositoryWrapper.SaveAsync();
@@ -151,7 +152,7 @@ namespace BusinessLogic.Services
             if (subscription != null)
             {
                 subscription.Role = role;
-                _repositoryWrapper.Subscription.Update(subscription);
+                await _repositoryWrapper.Subscription.Update(subscription);
                 await _repositoryWrapper.SaveAsync();
             }
         }

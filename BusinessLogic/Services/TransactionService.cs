@@ -1,6 +1,7 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+﻿
+using Domain.Interfaces.Services;
+using Domain.Models;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
@@ -64,7 +65,7 @@ namespace BusinessLogic.Services
 
         public async Task<Transaction> Create(Transaction transaction)
         {
-            _repositoryWrapper.Transaction.Create(transaction);
+            await _repositoryWrapper.Transaction.Create(transaction);
 
             // Обновляем баланс пользователя
             if (transaction.UserId != null)
@@ -84,7 +85,7 @@ namespace BusinessLogic.Services
                         user.Coins += transaction.Amount;
                     }
 
-                    _repositoryWrapper.User.Update(user);
+                    await _repositoryWrapper.User.Update(user);
                 }
             }
 
@@ -94,7 +95,7 @@ namespace BusinessLogic.Services
 
         public async Task<Transaction> Update(Transaction transaction)
         {
-            _repositoryWrapper.Transaction.Update(transaction);
+            await _repositoryWrapper.Transaction.Update(transaction);
             await _repositoryWrapper.SaveAsync();
             return transaction;
         }
@@ -125,11 +126,11 @@ namespace BusinessLogic.Services
                             user.Coins -= transaction.Amount;
                         }
 
-                        _repositoryWrapper.User.Update(user);
+                        await _repositoryWrapper.User.Update(user);
                     }
                 }
 
-                _repositoryWrapper.Transaction.Delete(transaction);
+                await _repositoryWrapper.Transaction.Delete(transaction);
                 await _repositoryWrapper.SaveAsync();
             }
         }

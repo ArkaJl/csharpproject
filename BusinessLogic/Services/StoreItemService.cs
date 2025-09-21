@@ -1,6 +1,7 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+﻿
+using Domain.Interfaces.Services;
+using Domain.Models;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
@@ -46,14 +47,14 @@ namespace BusinessLogic.Services
 
         public async Task<StoreItem> Create(StoreItem storeItem)
         {
-            _repositoryWrapper.StoreItem.Create(storeItem);
+            await _repositoryWrapper.StoreItem.Create(storeItem);
             await _repositoryWrapper.SaveAsync();
             return storeItem;
         }
 
         public async Task<StoreItem> Update(StoreItem storeItem)
         {
-            _repositoryWrapper.StoreItem.Update(storeItem);
+            await _repositoryWrapper.StoreItem.Update(storeItem);
             await _repositoryWrapper.SaveAsync();
             return storeItem;
         }
@@ -66,7 +67,7 @@ namespace BusinessLogic.Services
 
             if (storeItem != null)
             {
-                _repositoryWrapper.StoreItem.Delete(storeItem);
+                await _repositoryWrapper.StoreItem.Delete(storeItem);
                 await _repositoryWrapper.SaveAsync();
             }
         }

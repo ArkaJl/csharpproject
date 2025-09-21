@@ -16,8 +16,6 @@ C:\Users\Student\Documents\alexeev\WebApplication1\BusinessLogic\obj\Debug\net8.
 C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\bin\Debug\net8.0\BusinessLogic.deps.json
 C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\bin\Debug\net8.0\BusinessLogic.dll
 C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\bin\Debug\net8.0\BusinessLogic.pdb
-C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\bin\Debug\net8.0\DataAccess.dll
-C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\bin\Debug\net8.0\DataAccess.pdb
 C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.AssemblyReference.cache
 C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
 C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\obj\Debug\net8.0\BusinessLogic.AssemblyInfoInputs.cache
@@ -45,3 +43,5 @@ C:\Users\Student\Documents\alexeev\a\csharpproject\BusinessLogic\obj\Debug\net8.
 C:\Users\Student\Documents\alexeev\a\csharpproject\BusinessLogic\obj\Debug\net8.0\refint\BusinessLogic.dll
 C:\Users\Student\Documents\alexeev\a\csharpproject\BusinessLogic\obj\Debug\net8.0\BusinessLogic.pdb
 C:\Users\Student\Documents\alexeev\a\csharpproject\BusinessLogic\obj\Debug\net8.0\ref\BusinessLogic.dll
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\bin\Debug\net8.0\Domain.dll
+C:\My STORAGE\работа\csharp\csharpproject\BusinessLogic\bin\Debug\net8.0\Domain.pdb

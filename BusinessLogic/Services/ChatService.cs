@@ -1,6 +1,7 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.Models;
-using DataAccess.Wrapper;
+﻿
+using Domain.Interfaces.Services;
+using Domain.Models;
+using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic.Services
@@ -58,14 +59,14 @@ namespace BusinessLogic.Services
 
         public async Task<Chat> Create(Chat chat)
         {
-            _repositoryWrapper.Chat.Create(chat);
+            await _repositoryWrapper.Chat.Create(chat);
             await _repositoryWrapper.SaveAsync();
             return chat;
         }
 
         public async Task<Chat> Update(Chat chat)
         {
-            _repositoryWrapper.Chat.Update(chat);
+            await _repositoryWrapper.Chat.Update(chat);
             await _repositoryWrapper.SaveAsync();
             return chat;
         }
@@ -78,7 +79,7 @@ namespace BusinessLogic.Services
 
             if (chat != null)
             {
-                _repositoryWrapper.Chat.Delete(chat);
+                await _repositoryWrapper.Chat.Delete(chat);
                 await _repositoryWrapper.SaveAsync();
             }
         }
@@ -92,7 +93,7 @@ namespace BusinessLogic.Services
                 JoinedAt = DateTime.UtcNow
             };
 
-            _repositoryWrapper.ChatParticipant.Create(participant);
+            await _repositoryWrapper.ChatParticipant.Create(participant);
             await _repositoryWrapper.SaveAsync();
         }
 
@@ -104,7 +105,7 @@ namespace BusinessLogic.Services
 
             if (participant != null)
             {
-                _repositoryWrapper.ChatParticipant.Delete(participant);
+                await _repositoryWrapper.ChatParticipant.Delete(participant);
                 await _repositoryWrapper.SaveAsync();
             }
         }

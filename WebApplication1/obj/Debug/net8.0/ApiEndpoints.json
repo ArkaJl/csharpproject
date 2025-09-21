@@ -19,7 +19,7 @@
     "Parameters": [
       {
         "Name": "album",
-        "Type": "DataAccess.Models.Album",
+        "Type": "Domain.Models.Album",
         "IsRequired": true
       }
     ],
@@ -56,7 +56,7 @@
       },
       {
         "Name": "album",
-        "Type": "DataAccess.Models.Album",
+        "Type": "Domain.Models.Album",
         "IsRequired": true
       }
     ],
@@ -114,7 +114,7 @@
     "Parameters": [
       {
         "Name": "chat",
-        "Type": "DataAccess.Models.Chat",
+        "Type": "Domain.Models.Chat",
         "IsRequired": true
       }
     ],
@@ -209,7 +209,7 @@
       },
       {
         "Name": "chat",
-        "Type": "DataAccess.Models.Chat",
+        "Type": "Domain.Models.Chat",
         "IsRequired": true
       }
     ],
@@ -283,7 +283,7 @@
     "Parameters": [
       {
         "Name": "community",
-        "Type": "DataAccess.Models.Community",
+        "Type": "Domain.Models.Community",
         "IsRequired": true
       }
     ],
@@ -409,7 +409,7 @@
       },
       {
         "Name": "community",
-        "Type": "DataAccess.Models.Community",
+        "Type": "Domain.Models.Community",
         "IsRequired": true
       }
     ],
@@ -483,7 +483,7 @@
     "Parameters": [
       {
         "Name": "medium",
-        "Type": "DataAccess.Models.Medium",
+        "Type": "Domain.Models.Medium",
         "IsRequired": true
       }
     ],
@@ -520,7 +520,7 @@
       },
       {
         "Name": "medium",
-        "Type": "DataAccess.Models.Medium",
+        "Type": "Domain.Models.Medium",
         "IsRequired": true
       }
     ],
@@ -626,7 +626,7 @@
     "Parameters": [
       {
         "Name": "message",
-        "Type": "DataAccess.Models.Message",
+        "Type": "Domain.Models.Message",
         "IsRequired": true
       }
     ],
@@ -663,7 +663,7 @@
       },
       {
         "Name": "message",
-        "Type": "DataAccess.Models.Message",
+        "Type": "Domain.Models.Message",
         "IsRequired": true
       }
     ],
@@ -795,7 +795,7 @@
     "Parameters": [
       {
         "Name": "notification",
-        "Type": "DataAccess.Models.Notification",
+        "Type": "Domain.Models.Notification",
         "IsRequired": true
       }
     ],
@@ -832,7 +832,7 @@
       },
       {
         "Name": "notification",
-        "Type": "DataAccess.Models.Notification",
+        "Type": "Domain.Models.Notification",
         "IsRequired": true
       }
     ],
@@ -954,7 +954,7 @@
     "Parameters": [
       {
         "Name": "post",
-        "Type": "DataAccess.Models.Post",
+        "Type": "Domain.Models.Post",
         "IsRequired": true
       }
     ],
@@ -991,7 +991,7 @@
       },
       {
         "Name": "post",
-        "Type": "DataAccess.Models.Post",
+        "Type": "Domain.Models.Post",
         "IsRequired": true
       }
     ],
@@ -1028,7 +1028,7 @@
       },
       {
         "Name": "comment",
-        "Type": "DataAccess.Models.Comment",
+        "Type": "Domain.Models.Comment",
         "IsRequired": true
       }
     ],
@@ -1144,7 +1144,7 @@
     "Parameters": [
       {
         "Name": "storeItem",
-        "Type": "DataAccess.Models.StoreItem",
+        "Type": "Domain.Models.StoreItem",
         "IsRequired": true
       }
     ],
@@ -1181,7 +1181,7 @@
       },
       {
         "Name": "storeItem",
-        "Type": "DataAccess.Models.StoreItem",
+        "Type": "Domain.Models.StoreItem",
         "IsRequired": true
       }
     ],
@@ -1292,7 +1292,7 @@
     "Parameters": [
       {
         "Name": "transaction",
-        "Type": "DataAccess.Models.Transaction",
+        "Type": "Domain.Models.Transaction",
         "IsRequired": true
       }
     ],
@@ -1329,7 +1329,7 @@
       },
       {
         "Name": "transaction",
-        "Type": "DataAccess.Models.Transaction",
+        "Type": "Domain.Models.Transaction",
         "IsRequired": true
       }
     ],
@@ -1456,7 +1456,7 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "DataAccess.Models.User",
+        "Type": "Domain.Models.User",
         "IsRequired": true
       }
     ],
@@ -1472,7 +1472,7 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "DataAccess.Models.User",
+        "Type": "Domain.Models.User",
         "IsRequired": true
       }
     ],
@@ -1530,7 +1530,7 @@
     "Parameters": [
       {
         "Name": "userInventory",
-        "Type": "DataAccess.Models.UserInventory",
+        "Type": "Domain.Models.UserInventory",
         "IsRequired": true
       }
     ],
@@ -1546,7 +1546,7 @@
     "Parameters": [
       {
         "Name": "userInventory",
-        "Type": "DataAccess.Models.UserInventory",
+        "Type": "Domain.Models.UserInventory",
         "IsRequired": true
       }
     ],
