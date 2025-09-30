@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BackendApi.Controllers
 {
+    /// <summary>
+    /// Контроллер для управления сообществами
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class CommunityController : ControllerBase
@@ -14,6 +17,9 @@ namespace BackendApi.Controllers
         {
             _communityService = communityService;
         }
+        /// <summary>
+        /// получить все сообщества
+        /// </summary>
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
@@ -21,6 +27,9 @@ namespace BackendApi.Controllers
             var communities = await _communityService.GetAll();
             return Ok(communities);
         }
+        /// <summary>
+        /// получить сообщество по id
+        /// </summary>
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
@@ -32,6 +41,9 @@ namespace BackendApi.Controllers
             }
             return Ok(community);
         }
+        /// <summary>
+        /// получить участника сообщества по id
+        /// </summary>
 
         [HttpGet("user/{userId}")]
         public async Task<IActionResult> GetByUserId(string userId)
@@ -39,6 +51,9 @@ namespace BackendApi.Controllers
             var communities = await _communityService.GetByUserId(userId);
             return Ok(communities);
         }
+        /// <summary>
+        /// создать сообщество
+        /// </summary>
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] Community community)
@@ -46,6 +61,9 @@ namespace BackendApi.Controllers
             var createdCommunity = await _communityService.Create(community);
             return CreatedAtAction(nameof(GetById), new { id = createdCommunity.Id }, createdCommunity);
         }
+        /// <summary>
+        /// изменить данные сообщества
+        /// </summary>
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, [FromBody] Community community)
@@ -58,6 +76,9 @@ namespace BackendApi.Controllers
             var updatedCommunity = await _communityService.Update(community);
             return Ok(updatedCommunity);
         }
+        /// <summary>
+        /// удалить сообщество
+        /// </summary>
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
@@ -65,6 +86,9 @@ namespace BackendApi.Controllers
             await _communityService.Delete(id);
             return NoContent();
         }
+        /// <summary>
+        /// добавить участника сообщества
+        /// </summary>
 
         [HttpPost("{communityId}/subscribe/{userId}")]
         public async Task<IActionResult> SubscribeUser(string communityId, string userId, [FromQuery] string role = "member")
@@ -72,6 +96,9 @@ namespace BackendApi.Controllers
             await _communityService.SubscribeUser(communityId, userId, role);
             return Ok();
         }
+        /// <summary>
+        /// удалить участника сообщества
+        /// </summary>
 
         [HttpDelete("{communityId}/unsubscribe/{userId}")]
         public async Task<IActionResult> UnsubscribeUser(string communityId, string userId)
@@ -79,6 +106,9 @@ namespace BackendApi.Controllers
             await _communityService.UnsubscribeUser(communityId, userId);
             return NoContent();
         }
+        /// <summary>
+        /// получить всех участников сообщества
+        /// </summary>
 
         [HttpGet("{communityId}/subscribers")]
         public async Task<IActionResult> GetCommunitySubscribers(string communityId)
@@ -86,6 +116,9 @@ namespace BackendApi.Controllers
             var subscribers = await _communityService.GetCommunitySubscribers(communityId);
             return Ok(subscribers);
         }
+        /// <summary>
+        /// получить подписчиков пользователя
+        /// </summary>
 
         [HttpGet("user/{userId}/subscriptions")]
         public async Task<IActionResult> GetUserSubscriptions(string userId)
@@ -93,6 +126,9 @@ namespace BackendApi.Controllers
             var subscriptions = await _communityService.GetUserSubscriptions(userId);
             return Ok(subscriptions);
         }
+        /// <summary>
+        /// изменить роль участника сообщества
+        /// </summary>
 
         [HttpPut("{communityId}/members/{userId}/role")]
         public async Task<IActionResult> UpdateMemberRole(string communityId, string userId, [FromBody] string role)

@@ -45,7 +45,7 @@ builder.Services.AddSwaggerGen(options =>
 
 builder.Services.AddDbContext<JlnestContext>(options =>
     options.UseMySQL(
-        "Server=localhost;Port=3306;Database=jlnest;User=root;Password=1234;",
+        "Server=localhost;Port=3306;Database=jlnest;User=root;Password=12345;",
         b => b.MigrationsAssembly("DataAccess")
     ));
 

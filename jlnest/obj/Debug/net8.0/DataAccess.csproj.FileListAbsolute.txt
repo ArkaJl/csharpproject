@@ -45,3 +45,21 @@ C:\Users\Student\Documents\alexeev\a\csharpproject\jlnest\obj\Debug\net8.0\ref\D
 C:\My STORAGE\работа\csharp\csharpproject\jlnest\bin\Debug\net8.0\Domain.dll
 C:\My STORAGE\работа\csharp\csharpproject\jlnest\bin\Debug\net8.0\Domain.pdb
 C:\My STORAGE\работа\csharp\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.csproj.Up2Date
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\bin\Debug\net8.0\DataAccess.deps.json
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\bin\Debug\net8.0\DataAccess.dll
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\bin\Debug\net8.0\Domain.dll
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\bin\Debug\net8.0\Domain.pdb
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.sourcelink.json
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.csproj.Up2Date
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.dll
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\obj\Debug\net8.0\refint\DataAccess.dll
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.pdb
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+C:\Users\Student\Documents\alexeev\sas\csharpproject\jlnest\obj\Debug\net8.0\ref\DataAccess.dll

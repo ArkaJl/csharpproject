@@ -19,6 +19,7 @@
         "tags": [
           "Album"
         ],
+        "summary": "получить все альбомы",
         "responses": {
           "200": {
             "description": "OK"
@@ -29,6 +30,7 @@
         "tags": [
           "Album"
         ],
+        "summary": "Создать альбом",
         "requestBody": {
           "content": {
             "application/json": {
@@ -60,6 +62,7 @@
         "tags": [
           "Album"
         ],
+        "summary": "получить альбомы по id",
         "parameters": [
           {
             "name": "id",
@@ -80,6 +83,7 @@
         "tags": [
           "Album"
         ],
+        "summary": "изменить данные альбома",
         "parameters": [
           {
             "name": "id",
@@ -119,6 +123,7 @@
         "tags": [
           "Album"
         ],
+        "summary": "удалить альбом",
         "parameters": [
           {
             "name": "id",
@@ -141,6 +146,7 @@
         "tags": [
           "Album"
         ],
+        "summary": "получить альбомы сообщества по id",
         "parameters": [
           {
             "name": "communityId",
@@ -163,6 +169,7 @@
         "tags": [
           "Chat"
         ],
+        "summary": "получить все чаты",
         "responses": {
           "200": {
             "description": "OK"
@@ -173,6 +180,7 @@
         "tags": [
           "Chat"
         ],
+        "summary": "создать чат",
         "requestBody": {
           "content": {
             "application/json": {
@@ -204,6 +212,7 @@
         "tags": [
           "Chat"
         ],
+        "summary": "получить чат по id",
         "parameters": [
           {
             "name": "id",
@@ -224,6 +233,7 @@
         "tags": [
           "Chat"
         ],
+        "summary": "изменить чат",
         "parameters": [
           {
             "name": "id",
@@ -263,6 +273,7 @@
         "tags": [
           "Chat"
         ],
+        "summary": "удалить чат",
         "parameters": [
           {
             "name": "id",
@@ -285,6 +296,7 @@
         "tags": [
           "Chat"
         ],
+        "summary": "получить чаты сообщества",
         "parameters": [
           {
             "name": "communityId",
@@ -307,6 +319,7 @@
         "tags": [
           "Chat"
         ],
+        "summary": "получить чаты пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -329,6 +342,7 @@
         "tags": [
           "Chat"
         ],
+        "summary": "добавить участника в чат",
         "parameters": [
           {
             "name": "chatId",
@@ -357,6 +371,7 @@
         "tags": [
           "Chat"
         ],
+        "summary": "удалить участника чата",
         "parameters": [
           {
             "name": "chatId",
@@ -387,6 +402,7 @@
         "tags": [
           "Chat"
         ],
+        "summary": "получить всех участников чата",
         "parameters": [
           {
             "name": "chatId",
@@ -409,6 +425,7 @@
         "tags": [
           "Community"
         ],
+        "summary": "получить все сообщества",
         "responses": {
           "200": {
             "description": "OK"
@@ -419,6 +436,7 @@
         "tags": [
           "Community"
         ],
+        "summary": "создать сообщество",
         "requestBody": {
           "content": {
             "application/json": {
@@ -450,6 +468,7 @@
         "tags": [
           "Community"
         ],
+        "summary": "получить сообщество по id",
         "parameters": [
           {
             "name": "id",
@@ -470,6 +489,7 @@
         "tags": [
           "Community"
         ],
+        "summary": "изменить данные сообщества",
         "parameters": [
           {
             "name": "id",
@@ -509,6 +529,7 @@
         "tags": [
           "Community"
         ],
+        "summary": "удалить сообщество",
         "parameters": [
           {
             "name": "id",
@@ -531,6 +552,7 @@
         "tags": [
           "Community"
         ],
+        "summary": "получить участника сообщества по id",
         "parameters": [
           {
             "name": "userId",
@@ -553,6 +575,7 @@
         "tags": [
           "Community"
         ],
+        "summary": "добавить участника сообщества",
         "parameters": [
           {
             "name": "communityId",
@@ -591,6 +614,7 @@
         "tags": [
           "Community"
         ],
+        "summary": "удалить участника сообщества",
         "parameters": [
           {
             "name": "communityId",
@@ -621,6 +645,7 @@
         "tags": [
           "Community"
         ],
+        "summary": "получить всех участников сообщества",
         "parameters": [
           {
             "name": "communityId",
@@ -643,6 +668,7 @@
         "tags": [
           "Community"
         ],
+        "summary": "получить подписчиков пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -665,6 +691,7 @@
         "tags": [
           "Community"
         ],
+        "summary": "изменить роль участника сообщества",
         "parameters": [
           {
             "name": "communityId",
@@ -714,6 +741,7 @@
         "tags": [
           "Media"
         ],
+        "summary": "получить все медиа",
         "responses": {
           "200": {
             "description": "OK"
@@ -724,6 +752,7 @@
         "tags": [
           "Media"
         ],
+        "summary": "создать медиа",
         "requestBody": {
           "content": {
             "application/json": {
@@ -755,6 +784,7 @@
         "tags": [
           "Media"
         ],
+        "summary": "получить медиа по id",
         "parameters": [
           {
             "name": "id",
@@ -775,6 +805,7 @@
         "tags": [
           "Media"
         ],
+        "summary": "изменить медиа",
         "parameters": [
           {
             "name": "id",
@@ -814,6 +845,7 @@
         "tags": [
           "Media"
         ],
+        "summary": "удалить медиа по id",
         "parameters": [
           {
             "name": "id",
@@ -836,6 +868,7 @@
         "tags": [
           "Media"
         ],
+        "summary": "получить медиа из альбома",
         "parameters": [
           {
             "name": "albumId",
@@ -858,6 +891,7 @@
         "tags": [
           "Media"
         ],
+        "summary": "получить медиа пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -880,6 +914,7 @@
         "tags": [
           "Media"
         ],
+        "summary": "получить медиа типа",
         "parameters": [
           {
             "name": "type",
@@ -902,6 +937,7 @@
         "tags": [
           "Media"
         ],
+        "summary": "получить последние несколько медиа",
         "parameters": [
           {
             "name": "count",
@@ -925,6 +961,7 @@
         "tags": [
           "Message"
         ],
+        "summary": "получить все сообщения",
         "responses": {
           "200": {
             "description": "OK"
@@ -935,6 +972,7 @@
         "tags": [
           "Message"
         ],
+        "summary": "создать сообщение",
         "requestBody": {
           "content": {
             "application/json": {
@@ -966,6 +1004,7 @@
         "tags": [
           "Message"
         ],
+        "summary": "получить сообщение по id",
         "parameters": [
           {
             "name": "id",
@@ -986,6 +1025,7 @@
         "tags": [
           "Message"
         ],
+        "summary": "изменить сообщение",
         "parameters": [
           {
             "name": "id",
@@ -1025,6 +1065,7 @@
         "tags": [
           "Message"
         ],
+        "summary": "удалить сообщение",
         "parameters": [
           {
             "name": "id",
@@ -1047,6 +1088,7 @@
         "tags": [
           "Message"
         ],
+        "summary": "получить сообщения из чата",
         "parameters": [
           {
             "name": "chatId",
@@ -1069,6 +1111,7 @@
         "tags": [
           "Message"
         ],
+        "summary": "получить сообщения пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -1091,6 +1134,7 @@
         "tags": [
           "Message"
         ],
+        "summary": "получить количество непрочитанных сообщений пользователя в чате",
         "parameters": [
           {
             "name": "chatId",
@@ -1121,6 +1165,7 @@
         "tags": [
           "Message"
         ],
+        "summary": "пометить прочитанным сообщение",
         "parameters": [
           {
             "name": "id",
@@ -1143,6 +1188,7 @@
         "tags": [
           "Message"
         ],
+        "summary": "пометить все сообщения пользоватея прочитанными в чате",
         "parameters": [
           {
             "name": "chatId",
@@ -1173,6 +1219,7 @@
         "tags": [
           "Notification"
         ],
+        "summary": "получить все уведомления",
         "responses": {
           "200": {
             "description": "OK"
@@ -1183,6 +1230,7 @@
         "tags": [
           "Notification"
         ],
+        "summary": "создать уведомление",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1214,6 +1262,7 @@
         "tags": [
           "Notification"
         ],
+        "summary": "получить уведомление по id",
         "parameters": [
           {
             "name": "id",
@@ -1234,6 +1283,7 @@
         "tags": [
           "Notification"
         ],
+        "summary": "изменить уведомление",
         "parameters": [
           {
             "name": "id",
@@ -1273,6 +1323,7 @@
         "tags": [
           "Notification"
         ],
+        "summary": "удалить уведомление",
         "parameters": [
           {
             "name": "id",
@@ -1295,6 +1346,7 @@
         "tags": [
           "Notification"
         ],
+        "summary": "получить уведомления пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -1317,6 +1369,7 @@
         "tags": [
           "Notification"
         ],
+        "summary": "получить непрочитанные уведомления пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -1339,6 +1392,7 @@
         "tags": [
           "Notification"
         ],
+        "summary": "получить количество непрочитанных сообщений пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -1361,6 +1415,7 @@
         "tags": [
           "Notification"
         ],
+        "summary": "пометить уведомление прочитанным",
         "parameters": [
           {
             "name": "id",
@@ -1383,6 +1438,7 @@
         "tags": [
           "Notification"
         ],
+        "summary": "пометить все уведомления прочитанными пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -1405,6 +1461,7 @@
         "tags": [
           "Post"
         ],
+        "summary": "получить все посты",
         "responses": {
           "200": {
             "description": "OK"
@@ -1415,6 +1472,7 @@
         "tags": [
           "Post"
         ],
+        "summary": "создать пост",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1446,6 +1504,7 @@
         "tags": [
           "Post"
         ],
+        "summary": "получить пост по id",
         "parameters": [
           {
             "name": "id",
@@ -1466,6 +1525,7 @@
         "tags": [
           "Post"
         ],
+        "summary": "изменить пост",
         "parameters": [
           {
             "name": "id",
@@ -1505,6 +1565,7 @@
         "tags": [
           "Post"
         ],
+        "summary": "удалить пост",
         "parameters": [
           {
             "name": "id",
@@ -1527,6 +1588,7 @@
         "tags": [
           "Post"
         ],
+        "summary": "получить посты пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -1549,6 +1611,7 @@
         "tags": [
           "Post"
         ],
+        "summary": "получить посты в сообществе",
         "parameters": [
           {
             "name": "communityId",
@@ -1571,6 +1634,7 @@
         "tags": [
           "Post"
         ],
+        "summary": "пометить нравится пользователем пост",
         "parameters": [
           {
             "name": "postId",
@@ -1601,6 +1665,7 @@
         "tags": [
           "Post"
         ],
+        "summary": "пометить ненравится пользователем пост",
         "parameters": [
           {
             "name": "postId",
@@ -1631,6 +1696,7 @@
         "tags": [
           "Post"
         ],
+        "summary": "добавить комментарий посту",
         "parameters": [
           {
             "name": "postId",
@@ -1670,6 +1736,7 @@
         "tags": [
           "Post"
         ],
+        "summary": "получить комментарии поста",
         "parameters": [
           {
             "name": "postId",
@@ -1692,6 +1759,7 @@
         "tags": [
           "StoreItem"
         ],
+        "summary": "получить все товары",
         "responses": {
           "200": {
             "description": "OK"
@@ -1702,6 +1770,7 @@
         "tags": [
           "StoreItem"
         ],
+        "summary": "создать товар",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1733,6 +1802,7 @@
         "tags": [
           "StoreItem"
         ],
+        "summary": "получить товар по id",
         "parameters": [
           {
             "name": "id",
@@ -1753,6 +1823,7 @@
         "tags": [
           "StoreItem"
         ],
+        "summary": "изменить товар",
         "parameters": [
           {
             "name": "id",
@@ -1792,6 +1863,7 @@
         "tags": [
           "StoreItem"
         ],
+        "summary": "удалить товар",
         "parameters": [
           {
             "name": "id",
@@ -1814,6 +1886,7 @@
         "tags": [
           "StoreItem"
         ],
+        "summary": "получить все товары типа",
         "parameters": [
           {
             "name": "type",
@@ -1836,6 +1909,7 @@
         "tags": [
           "StoreItem"
         ],
+        "summary": "получить товары категории",
         "parameters": [
           {
             "name": "category",
@@ -1858,6 +1932,7 @@
         "tags": [
           "StoreItem"
         ],
+        "summary": "получить товары поиска",
         "parameters": [
           {
             "name": "term",
@@ -1879,6 +1954,7 @@
         "tags": [
           "StoreItem"
         ],
+        "summary": "получить товары по цене",
         "parameters": [
           {
             "name": "minPrice",
@@ -1909,6 +1985,7 @@
         "tags": [
           "Transaction"
         ],
+        "summary": "получить все транзакции",
         "responses": {
           "200": {
             "description": "OK"
@@ -1919,6 +1996,7 @@
         "tags": [
           "Transaction"
         ],
+        "summary": "создать транзакцию",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1950,6 +2028,7 @@
         "tags": [
           "Transaction"
         ],
+        "summary": "получить транзакцию по id",
         "parameters": [
           {
             "name": "id",
@@ -1970,6 +2049,7 @@
         "tags": [
           "Transaction"
         ],
+        "summary": "изменить транзакцию",
         "parameters": [
           {
             "name": "id",
@@ -2009,6 +2089,7 @@
         "tags": [
           "Transaction"
         ],
+        "summary": "удалить транзакцию",
         "parameters": [
           {
             "name": "id",
@@ -2031,6 +2112,7 @@
         "tags": [
           "Transaction"
         ],
+        "summary": "получить транзакции пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -2053,6 +2135,7 @@
         "tags": [
           "Transaction"
         ],
+        "summary": "получить транзакции с предметом по id",
         "parameters": [
           {
             "name": "itemId",
@@ -2075,6 +2158,7 @@
         "tags": [
           "Transaction"
         ],
+        "summary": "получить транзакции типа",
         "parameters": [
           {
             "name": "type",
@@ -2097,6 +2181,7 @@
         "tags": [
           "Transaction"
         ],
+        "summary": "получить транзакции по дате",
         "parameters": [
           {
             "name": "startDate",
@@ -2127,6 +2212,7 @@
         "tags": [
           "Transaction"
         ],
+        "summary": "получить баланс пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -2271,6 +2357,7 @@
         "tags": [
           "UserInventory"
         ],
+        "summary": "получить все инвентари",
         "responses": {
           "200": {
             "description": "OK"
@@ -2281,6 +2368,7 @@
         "tags": [
           "UserInventory"
         ],
+        "summary": "добавить предмет в инвентарь пользователя",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2310,6 +2398,7 @@
         "tags": [
           "UserInventory"
         ],
+        "summary": "изменить инвентарь",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2341,6 +2430,7 @@
         "tags": [
           "UserInventory"
         ],
+        "summary": "получить инвыентарь пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -2363,6 +2453,7 @@
         "tags": [
           "UserInventory"
         ],
+        "summary": "получить предмет пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -2391,6 +2482,7 @@
         "tags": [
           "UserInventory"
         ],
+        "summary": "удалить предмет из инвентаря пользователя",
         "parameters": [
           {
             "name": "userId",
@@ -2421,6 +2513,7 @@
         "tags": [
           "UserInventory"
         ],
+        "summary": "экипировать предмет пользоватеоля",
         "parameters": [
           {
             "name": "userId",
@@ -2451,6 +2544,7 @@
         "tags": [
           "UserInventory"
         ],
+        "summary": "снять предмет пользователя",
         "parameters": [
           {
             "name": "userId",

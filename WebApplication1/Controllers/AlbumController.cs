@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BackendApi.Controllers
 {
+    /// <summary>
+    /// Контроллер для управления альбомами
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class AlbumController : ControllerBase
@@ -14,6 +17,9 @@ namespace BackendApi.Controllers
         {
             _albumService = albumService;
         }
+        /// <summary>
+        /// получить все альбомы
+        /// </summary>
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
@@ -21,6 +27,9 @@ namespace BackendApi.Controllers
             var albums = await _albumService.GetAll();
             return Ok(albums);
         }
+        /// <summary>
+        /// получить альбомы по id
+        /// </summary>
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
@@ -32,6 +41,9 @@ namespace BackendApi.Controllers
             }
             return Ok(album);
         }
+        /// <summary>
+        /// получить альбомы сообщества по id
+        /// </summary>
 
         [HttpGet("community/{communityId}")]
         public async Task<IActionResult> GetByCommunityId(string communityId)
@@ -39,6 +51,9 @@ namespace BackendApi.Controllers
             var albums = await _albumService.GetByCommunityId(communityId);
             return Ok(albums);
         }
+        /// <summary>
+        /// Создать альбом
+        /// </summary>
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] Album album)
@@ -46,6 +61,9 @@ namespace BackendApi.Controllers
             var createdAlbum = await _albumService.Create(album);
             return CreatedAtAction(nameof(GetById), new { id = createdAlbum.Id }, createdAlbum);
         }
+        /// <summary>
+        /// изменить данные альбома
+        /// </summary>
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, [FromBody] Album album)
@@ -58,6 +76,9 @@ namespace BackendApi.Controllers
             var updatedAlbum = await _albumService.Update(album);
             return Ok(updatedAlbum);
         }
+        /// <summary>
+        /// удалить альбом
+        /// </summary>
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)

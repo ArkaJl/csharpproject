@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BackendApi.Controllers
 {
+    /// <summary>
+    /// контроллер для управления трнзакциями
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class TransactionController : ControllerBase
@@ -14,6 +17,9 @@ namespace BackendApi.Controllers
         {
             _transactionService = transactionService;
         }
+        /// <summary>
+        /// получить все транзакции
+        /// </summary>
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
@@ -21,6 +27,9 @@ namespace BackendApi.Controllers
             var transactions = await _transactionService.GetAll();
             return Ok(transactions);
         }
+        /// <summary>
+        /// получить транзакцию по id
+        /// </summary>
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
@@ -32,6 +41,9 @@ namespace BackendApi.Controllers
             }
             return Ok(transaction);
         }
+        /// <summary>
+        /// получить транзакции пользователя
+        /// </summary>
 
         [HttpGet("user/{userId}")]
         public async Task<IActionResult> GetByUserId(string userId)
@@ -39,6 +51,9 @@ namespace BackendApi.Controllers
             var transactions = await _transactionService.GetByUserId(userId);
             return Ok(transactions);
         }
+        /// <summary>
+        /// получить транзакции с предметом по id
+        /// </summary>
 
         [HttpGet("item/{itemId}")]
         public async Task<IActionResult> GetByItemId(string itemId)
@@ -46,6 +61,9 @@ namespace BackendApi.Controllers
             var transactions = await _transactionService.GetByItemId(itemId);
             return Ok(transactions);
         }
+        /// <summary>
+        /// получить транзакции типа
+        /// </summary>
 
         [HttpGet("type/{type}")]
         public async Task<IActionResult> GetByType(string type)
@@ -53,6 +71,9 @@ namespace BackendApi.Controllers
             var transactions = await _transactionService.GetByType(type);
             return Ok(transactions);
         }
+        /// <summary>
+        /// получить транзакции по дате
+        /// </summary>
 
         [HttpGet("date-range")]
         public async Task<IActionResult> GetByDateRange([FromQuery] DateTime startDate, [FromQuery] DateTime endDate)
@@ -60,6 +81,9 @@ namespace BackendApi.Controllers
             var transactions = await _transactionService.GetByDateRange(startDate, endDate);
             return Ok(transactions);
         }
+        /// <summary>
+        /// получить баланс пользователя
+        /// </summary>
 
         [HttpGet("user/{userId}/balance")]
         public async Task<IActionResult> GetUserBalance(string userId)
@@ -67,6 +91,9 @@ namespace BackendApi.Controllers
             var balance = await _transactionService.GetUserBalance(userId);
             return Ok(new { Balance = balance });
         }
+        /// <summary>
+        /// создать транзакцию
+        /// </summary>
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] Transaction transaction)
@@ -74,6 +101,9 @@ namespace BackendApi.Controllers
             var createdTransaction = await _transactionService.Create(transaction);
             return CreatedAtAction(nameof(GetById), new { id = createdTransaction.Id }, createdTransaction);
         }
+        /// <summary>
+        /// изменить транзакцию
+        /// </summary>
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, [FromBody] Transaction transaction)
@@ -86,6 +116,9 @@ namespace BackendApi.Controllers
             var updatedTransaction = await _transactionService.Update(transaction);
             return Ok(updatedTransaction);
         }
+        /// <summary>
+        /// удалить транзакцию
+        /// </summary>
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
