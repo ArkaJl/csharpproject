@@ -15,7 +15,7 @@ public partial class Message
 
     public bool ReadStatus { get; set; }
 
-    public DateTime? CreatedAt { get; set; }
+    public DateTime CreatedAt { get; set; }
 
     public virtual Chat? Chat { get; set; }
 

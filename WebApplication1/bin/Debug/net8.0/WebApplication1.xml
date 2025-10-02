@@ -14,27 +14,27 @@
             получить все альбомы
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.AlbumController.GetById(System.String)">
+        <member name="M:BackendApi.Controllers.AlbumController.GetById(System.Guid)">
             <summary>
-            получить альбомы по id
+            получить альбом по id
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.AlbumController.GetByCommunityId(System.String)">
+        <member name="M:BackendApi.Controllers.AlbumController.GetByCommunityId(System.Guid)">
             <summary>
             получить альбомы сообщества по id
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.AlbumController.Create(Domain.Models.Album)">
+        <member name="M:BackendApi.Controllers.AlbumController.Create(WebApplication1.Contracts.Album.CreateAlbumRequest)">
             <summary>
             Создать альбом
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.AlbumController.Update(System.String,Domain.Models.Album)">
+        <member name="M:BackendApi.Controllers.AlbumController.Update(System.Guid,WebApplication1.Contracts.Album.CreateAlbumRequest)">
             <summary>
             изменить данные альбома
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.AlbumController.Delete(System.String)">
+        <member name="M:BackendApi.Controllers.AlbumController.Delete(System.Guid)">
             <summary>
             удалить альбом
             </summary>
@@ -49,48 +49,47 @@
             получить все чаты
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.ChatController.GetById(System.String)">
+        <member name="M:BackendApi.Controllers.ChatController.GetById(System.Guid)">
             <summary>
             получить чат по id
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.ChatController.GetByCommunityId(System.String)">
+        <member name="M:BackendApi.Controllers.ChatController.GetByCommunityId(System.Guid)">
             <summary>
             получить чаты сообщества
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.ChatController.GetByUserId(System.String)">
+        <member name="M:BackendApi.Controllers.ChatController.GetByUserId(System.Guid)">
             <summary>
             получить чаты пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.ChatController.Create(Domain.Models.Chat)">
+        <member name="M:BackendApi.Controllers.ChatController.Create(WebApplication1.Contracts.Chat.CreateChatRequest)">
             <summary>
             создать чат
             </summary>
-            
         </member>
-        <member name="M:BackendApi.Controllers.ChatController.Update(System.String,Domain.Models.Chat)">
+        <member name="M:BackendApi.Controllers.ChatController.Update(System.Guid,WebApplication1.Contracts.Chat.CreateChatRequest)">
             <summary>
             изменить чат
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.ChatController.Delete(System.String)">
+        <member name="M:BackendApi.Controllers.ChatController.Delete(System.Guid)">
             <summary>
             удалить чат
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.ChatController.AddParticipant(System.String,System.String)">
+        <member name="M:BackendApi.Controllers.ChatController.AddParticipant(System.Guid,System.Guid)">
             <summary>
             добавить участника в чат
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.ChatController.RemoveParticipant(System.String,System.String)">
+        <member name="M:BackendApi.Controllers.ChatController.RemoveParticipant(System.Guid,System.Guid)">
             <summary>
             удалить участника чата
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.ChatController.GetChatParticipants(System.String)">
+        <member name="M:BackendApi.Controllers.ChatController.GetChatParticipants(System.Guid)">
             <summary>
             получить всех участников чата
             </summary>
@@ -105,52 +104,52 @@
             получить все сообщества
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.CommunityController.GetById(System.String)">
+        <member name="M:BackendApi.Controllers.CommunityController.GetById(System.Guid)">
             <summary>
             получить сообщество по id
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.CommunityController.GetByUserId(System.String)">
+        <member name="M:BackendApi.Controllers.CommunityController.GetByUserId(System.Guid)">
             <summary>
-            получить участника сообщества по id
+            получить сообщества пользователя по id пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.CommunityController.Create(Domain.Models.Community)">
+        <member name="M:BackendApi.Controllers.CommunityController.Create(WebApplication1.Contracts.Community.CreateCommunityRequest)">
             <summary>
             создать сообщество
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.CommunityController.Update(System.String,Domain.Models.Community)">
+        <member name="M:BackendApi.Controllers.CommunityController.Update(System.Guid,WebApplication1.Contracts.Community.UpdateCommunityRequest)">
             <summary>
             изменить данные сообщества
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.CommunityController.Delete(System.String)">
+        <member name="M:BackendApi.Controllers.CommunityController.Delete(System.Guid)">
             <summary>
             удалить сообщество
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.CommunityController.SubscribeUser(System.String,System.String,System.String)">
+        <member name="M:BackendApi.Controllers.CommunityController.SubscribeUser(System.Guid,System.Guid,System.String)">
             <summary>
             добавить участника сообщества
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.CommunityController.UnsubscribeUser(System.String,System.String)">
+        <member name="M:BackendApi.Controllers.CommunityController.UnsubscribeUser(System.Guid,System.Guid)">
             <summary>
             удалить участника сообщества
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.CommunityController.GetCommunitySubscribers(System.String)">
+        <member name="M:BackendApi.Controllers.CommunityController.GetCommunitySubscribers(System.Guid)">
             <summary>
             получить всех участников сообщества
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.CommunityController.GetUserSubscriptions(System.String)">
+        <member name="M:BackendApi.Controllers.CommunityController.GetUserSubscriptions(System.Guid)">
             <summary>
-            получить подписчиков пользователя
+            получить подписки пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.CommunityController.UpdateMemberRole(System.String,System.String,System.String)">
+        <member name="M:BackendApi.Controllers.CommunityController.UpdateMemberRole(System.Guid,System.Guid,System.String)">
             <summary>
             изменить роль участника сообщества
             </summary>
@@ -165,24 +164,24 @@
             получить все медиа
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MediaController.GetById(System.String)">
+        <member name="M:BackendApi.Controllers.MediaController.GetById(System.Guid)">
             <summary>
             получить медиа по id
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MediaController.GetByAlbumId(System.String)">
+        <member name="M:BackendApi.Controllers.MediaController.GetByAlbumId(System.Guid)">
             <summary>
             получить медиа из альбома
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MediaController.GetByUserId(System.String)">
+        <member name="M:BackendApi.Controllers.MediaController.GetByUserId(System.Guid)">
             <summary>
             получить медиа пользователя
             </summary>
         </member>
         <member name="M:BackendApi.Controllers.MediaController.GetByType(System.String)">
             <summary>
-            получить медиа типа
+            получить медиа по типу
             </summary>
         </member>
         <member name="M:BackendApi.Controllers.MediaController.GetRecentMedia(System.Int32)">
@@ -190,17 +189,17 @@
             получить последние несколько медиа
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MediaController.Create(Domain.Models.Medium)">
+        <member name="M:BackendApi.Controllers.MediaController.Create(WebApplication1.Contracts.Media.UploadMediaRequest)">
             <summary>
             создать медиа
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MediaController.Update(System.String,Domain.Models.Medium)">
+        <member name="M:BackendApi.Controllers.MediaController.Update(System.Guid,WebApplication1.Contracts.Media.UploadMediaRequest)">
             <summary>
             изменить медиа
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MediaController.Delete(System.String)">
+        <member name="M:BackendApi.Controllers.MediaController.Delete(System.Guid)">
             <summary>
             удалить медиа по id
             </summary>
@@ -215,49 +214,49 @@
             получить все сообщения
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MessageController.GetById(System.String)">
+        <member name="M:BackendApi.Controllers.MessageController.GetById(System.Guid)">
             <summary>
             получить сообщение по id
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MessageController.GetByChatId(System.String)">
+        <member name="M:BackendApi.Controllers.MessageController.GetByChatId(System.Guid)">
             <summary>
             получить сообщения из чата
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MessageController.GetByUserId(System.String)">
+        <member name="M:BackendApi.Controllers.MessageController.GetByUserId(System.Guid)">
             <summary>
             получить сообщения пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MessageController.GetUnreadCount(System.String,System.String)">
+        <member name="M:BackendApi.Controllers.MessageController.GetUnreadCount(System.Guid,System.Guid)">
             <summary>
             получить количество непрочитанных сообщений пользователя в чате
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MessageController.Create(Domain.Models.Message)">
+        <member name="M:BackendApi.Controllers.MessageController.Create(WebApplication1.Contracts.Message.CreateMessageRequest)">
             <summary>
             создать сообщение
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MessageController.Update(System.String,Domain.Models.Message)">
+        <member name="M:BackendApi.Controllers.MessageController.Update(System.Guid,WebApplication1.Contracts.Message.CreateMessageRequest)">
             <summary>
             изменить сообщение
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MessageController.Delete(System.String)">
+        <member name="M:BackendApi.Controllers.MessageController.Delete(System.Guid)">
             <summary>
             удалить сообщение
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MessageController.MarkAsRead(System.String)">
+        <member name="M:BackendApi.Controllers.MessageController.MarkAsRead(System.Guid)">
             <summary>
-            пометить прочитанным сообщение
+            пометить сообщение прочитанным
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.MessageController.MarkAllAsRead(System.String,System.String)">
+        <member name="M:BackendApi.Controllers.MessageController.MarkAllAsRead(System.Guid,System.Guid)">
             <summary>
-            пометить все сообщения пользоватея прочитанными в чате
+            пометить все сообщения пользователя прочитанными в чате
             </summary>
         </member>
         <member name="T:BackendApi.Controllers.NotificationController">
@@ -270,47 +269,47 @@
             получить все уведомления
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.NotificationController.GetById(System.String)">
+        <member name="M:BackendApi.Controllers.NotificationController.GetById(System.Guid)">
             <summary>
             получить уведомление по id
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.NotificationController.GetByUserId(System.String)">
+        <member name="M:BackendApi.Controllers.NotificationController.GetByUserId(System.Guid)">
             <summary>
             получить уведомления пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.NotificationController.GetUnreadByUserId(System.String)">
+        <member name="M:BackendApi.Controllers.NotificationController.GetUnreadByUserId(System.Guid)">
             <summary>
             получить непрочитанные уведомления пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.NotificationController.GetUnreadCount(System.String)">
+        <member name="M:BackendApi.Controllers.NotificationController.GetUnreadCount(System.Guid)">
             <summary>
-            получить количество непрочитанных сообщений пользователя
+            получить количество непрочитанных уведомлений пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.NotificationController.Create(Domain.Models.Notification)">
+        <member name="M:BackendApi.Controllers.NotificationController.Create(WebApplication1.Contracts.Notification.CreateNotificationRequest)">
             <summary>
             создать уведомление
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.NotificationController.Update(System.String,Domain.Models.Notification)">
+        <member name="M:BackendApi.Controllers.NotificationController.Update(System.Guid,WebApplication1.Contracts.Notification.CreateNotificationRequest)">
             <summary>
             изменить уведомление
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.NotificationController.Delete(System.String)">
+        <member name="M:BackendApi.Controllers.NotificationController.Delete(System.Guid)">
             <summary>
             удалить уведомление
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.NotificationController.MarkAsRead(System.String)">
+        <member name="M:BackendApi.Controllers.NotificationController.MarkAsRead(System.Guid)">
             <summary>
             пометить уведомление прочитанным
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.NotificationController.MarkAllAsRead(System.String)">
+        <member name="M:BackendApi.Controllers.NotificationController.MarkAllAsRead(System.Guid)">
             <summary>
             пометить все уведомления прочитанными пользователя
             </summary>
@@ -325,52 +324,52 @@
             получить все посты
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.PostController.GetById(System.String)">
+        <member name="M:BackendApi.Controllers.PostController.GetById(System.Guid)">
             <summary>
             получить пост по id
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.PostController.GetByUserId(System.String)">
+        <member name="M:BackendApi.Controllers.PostController.GetByUserId(System.Guid)">
             <summary>
             получить посты пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.PostController.GetByCommunityId(System.String)">
+        <member name="M:BackendApi.Controllers.PostController.GetByCommunityId(System.Guid)">
             <summary>
             получить посты в сообществе
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.PostController.Create(Domain.Models.Post)">
+        <member name="M:BackendApi.Controllers.PostController.Create(WebApplication1.Contracts.Post.CreatePostRequest)">
             <summary>
             создать пост
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.PostController.Update(System.String,Domain.Models.Post)">
+        <member name="M:BackendApi.Controllers.PostController.Update(System.Guid,WebApplication1.Contracts.Post.UpdatePostRequest)">
             <summary>
             изменить пост
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.PostController.Delete(System.String)">
+        <member name="M:BackendApi.Controllers.PostController.Delete(System.Guid)">
             <summary>
             удалить пост
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.PostController.LikePost(System.String,System.String)">
+        <member name="M:BackendApi.Controllers.PostController.LikePost(System.Guid,System.Guid)">
             <summary>
             пометить нравится пользователем пост
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.PostController.UnlikePost(System.String,System.String)">
+        <member name="M:BackendApi.Controllers.PostController.UnlikePost(System.Guid,System.Guid)">
             <summary>
             пометить ненравится пользователем пост
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.PostController.AddComment(System.String,Domain.Models.Comment)">
+        <member name="M:BackendApi.Controllers.PostController.AddComment(System.Guid,WebApplication1.Contracts.Comment.CreateCommentRequest)">
             <summary>
             добавить комментарий посту
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.PostController.GetPostComments(System.String)">
+        <member name="M:BackendApi.Controllers.PostController.GetPostComments(System.Guid)">
             <summary>
             получить комментарии поста
             </summary>
@@ -385,7 +384,7 @@
             получить все товары
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.StoreItemController.GetById(System.String)">
+        <member name="M:BackendApi.Controllers.StoreItemController.GetById(System.Guid)">
             <summary>
             получить товар по id
             </summary>
@@ -410,24 +409,24 @@
             получить товары по цене
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.StoreItemController.Create(Domain.Models.StoreItem)">
+        <member name="M:BackendApi.Controllers.StoreItemController.Create(WebApplication1.Contracts.Store.CreateStoreItemRequest)">
             <summary>
             создать товар
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.StoreItemController.Update(System.String,Domain.Models.StoreItem)">
+        <member name="M:BackendApi.Controllers.StoreItemController.Update(System.Guid,WebApplication1.Contracts.Store.CreateStoreItemRequest)">
             <summary>
             изменить товар
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.StoreItemController.Delete(System.String)">
+        <member name="M:BackendApi.Controllers.StoreItemController.Delete(System.Guid)">
             <summary>
             удалить товар
             </summary>
         </member>
         <member name="T:BackendApi.Controllers.TransactionController">
             <summary>
-            контроллер для управления трнзакциями
+            контроллер для управления транзакциями
             </summary>
         </member>
         <member name="M:BackendApi.Controllers.TransactionController.GetAll">
@@ -435,24 +434,19 @@
             получить все транзакции
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.TransactionController.GetById(System.String)">
+        <member name="M:BackendApi.Controllers.TransactionController.GetById(System.Guid)">
             <summary>
             получить транзакцию по id
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.TransactionController.GetByUserId(System.String)">
+        <member name="M:BackendApi.Controllers.TransactionController.GetByUserId(System.Guid)">
             <summary>
             получить транзакции пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.TransactionController.GetByItemId(System.String)">
+        <member name="M:BackendApi.Controllers.TransactionController.GetByItemId(System.Guid)">
             <summary>
             получить транзакции с предметом по id
-            </summary>
-        </member>
-        <member name="M:BackendApi.Controllers.TransactionController.GetByType(System.String)">
-            <summary>
-            получить транзакции типа
             </summary>
         </member>
         <member name="M:BackendApi.Controllers.TransactionController.GetByDateRange(System.DateTime,System.DateTime)">
@@ -460,22 +454,22 @@
             получить транзакции по дате
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.TransactionController.GetUserBalance(System.String)">
+        <member name="M:BackendApi.Controllers.TransactionController.GetUserBalance(System.Guid)">
             <summary>
             получить баланс пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.TransactionController.Create(Domain.Models.Transaction)">
+        <member name="M:BackendApi.Controllers.TransactionController.Create(WebApplication1.Contracts.Transaction.CreateTransactionRequest)">
             <summary>
             создать транзакцию
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.TransactionController.Update(System.String,Domain.Models.Transaction)">
+        <member name="M:BackendApi.Controllers.TransactionController.Update(System.Guid,WebApplication1.Contracts.Transaction.CreateTransactionRequest)">
             <summary>
             изменить транзакцию
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.TransactionController.Delete(System.String)">
+        <member name="M:BackendApi.Controllers.TransactionController.Delete(System.Guid)">
             <summary>
             удалить транзакцию
             </summary>
@@ -491,7 +485,7 @@
             </summary>
             <returns>Список всех пользователей</returns>
         </member>
-        <member name="M:BackendApi.Controllers.UserController.Add(Domain.Models.User)">
+        <member name="M:BackendApi.Controllers.UserController.Add(WebApplication1.Contracts.User.CreateUserRequest)">
              <summary>
              Создать нового пользователя
              </summary>
@@ -502,32 +496,32 @@
                  {
                      "username": "johndoe",
                      "email": "john@example.com",
-                     "passwordHash": "hashed_password",
+                     "password": "password123",
                      "avatarUrl": "https://example.com/avatar.jpg",
-                     "coins": 100,
-                     "status": "Online"
+                     "status": "Online",
+                     "themePreference": "dark"
                  }
             
              </remarks>
-             <param name="user">Данные пользователя</param>
+             <param name="request">Данные пользователя</param>
              <returns>Созданный пользователь</returns>
         </member>
-        <member name="M:BackendApi.Controllers.UserController.Update(Domain.Models.User)">
+        <member name="M:BackendApi.Controllers.UserController.Update(System.Guid,WebApplication1.Contracts.User.UpdateUserRequest)">
             <summary>
             Обновить данные пользователя
             </summary>
             <param name="id">ID пользователя</param>
-            <param name="user">Обновленные данные</param>
+            <param name="request">Обновленные данные</param>
             <returns>Обновленный пользователь</returns>
         </member>
-        <member name="M:BackendApi.Controllers.UserController.Delete(System.String)">
+        <member name="M:BackendApi.Controllers.UserController.Delete(System.Guid)">
             <summary>
             Удалить пользователя
             </summary>
             <param name="id">ID пользователя</param>
             <returns>Статус операции</returns>
         </member>
-        <member name="M:BackendApi.Controllers.UserController.GetById(System.String)">
+        <member name="M:BackendApi.Controllers.UserController.GetById(System.Guid)">
             <summary>
             Получить пользователя по ID
             </summary>
@@ -544,37 +538,37 @@
             получить все инвентари
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.UserInventoryController.GetByUserId(System.String)">
+        <member name="M:BackendApi.Controllers.UserInventoryController.GetByUserId(System.Guid)">
             <summary>
-            получить инвыентарь пользователя
+            получить инвентарь пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.UserInventoryController.GetByUserAndItemId(System.String,System.String)">
+        <member name="M:BackendApi.Controllers.UserInventoryController.GetByUserAndItemId(System.Guid,System.Guid)">
             <summary>
             получить предмет пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.UserInventoryController.Add(Domain.Models.UserInventory)">
+        <member name="M:BackendApi.Controllers.UserInventoryController.Add(WebApplication1.Contracts.Inventory.AddItemToInventoryRequest)">
             <summary>
             добавить предмет в инвентарь пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.UserInventoryController.Update(Domain.Models.UserInventory)">
+        <member name="M:BackendApi.Controllers.UserInventoryController.Update(WebApplication1.Contracts.Inventory.EquipItemRequest)">
             <summary>
             изменить инвентарь
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.UserInventoryController.Delete(System.String,System.String)">
+        <member name="M:BackendApi.Controllers.UserInventoryController.Delete(System.Guid,System.Guid)">
             <summary>
             удалить предмет из инвентаря пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.UserInventoryController.EquipItem(System.String,System.String)">
+        <member name="M:BackendApi.Controllers.UserInventoryController.EquipItem(System.Guid,System.Guid)">
             <summary>
-            экипировать предмет пользоватеоля
+            экипировать предмет пользователя
             </summary>
         </member>
-        <member name="M:BackendApi.Controllers.UserInventoryController.UnequipItem(System.String,System.String)">
+        <member name="M:BackendApi.Controllers.UserInventoryController.UnequipItem(System.Guid,System.Guid)">
             <summary>
             снять предмет пользователя
             </summary>

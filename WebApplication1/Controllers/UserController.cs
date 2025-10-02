@@ -1,6 +1,8 @@
-﻿using Domain.Models;
-using Domain.Interfaces.Services;
+﻿using Domain.Interfaces.Services;
+using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using Org.BouncyCastle.Crypto.Generators;
+using WebApplication1.Contracts.User;
 
 namespace BackendApi.Controllers
 {
@@ -11,11 +13,13 @@ namespace BackendApi.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private IUserService _userService;
+        private readonly IUserService _userService;
+
         public UserController(IUserService userService)
         {
             _userService = userService;
         }
+
         /// <summary>
         /// Получить всех пользователей
         /// </summary>
@@ -23,7 +27,20 @@ namespace BackendApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _userService.GetAll());
+            var users = await _userService.GetAll();
+            var response = users.Select(u => new UserResponse
+            {
+                Id = u.Id,
+                Username = u.Username,
+                Email = u.Email,
+                AvatarUrl = u.AvatarUrl,
+                Coins = u.Coins,
+                Status = u.Status,
+                CreatedAt = u.CreatedAt,
+                LastOnline = u.LastOnline,
+                ThemePreference = u.ThemePreference
+            });
+            return Ok(response);
         }
 
         /// <summary>
@@ -36,58 +53,144 @@ namespace BackendApi.Controllers
         ///     {
         ///         "username": "johndoe",
         ///         "email": "john@example.com",
-        ///         "passwordHash": "hashed_password",
+        ///         "password": "password123",
         ///         "avatarUrl": "https://example.com/avatar.jpg",
-        ///         "coins": 100,
-        ///         "status": "Online"
+        ///         "status": "Online",
+        ///         "themePreference": "dark"
         ///     }
         ///
         /// </remarks>
-        /// <param name="user">Данные пользователя</param>
+        /// <param name="request">Данные пользователя</param>
         /// <returns>Созданный пользователь</returns>
         [HttpPost]
-        public async Task<IActionResult> Add(User user)
+        public async Task<IActionResult> Add(CreateUserRequest request)
         {
+            var user = new User
+            {
+                Username = request.Username,
+                Email = request.Email,
+                PasswordHash = request.Password, // Хеширование пароля
+                AvatarUrl = request.AvatarUrl,
+                Status = request.Status,
+                ThemePreference = request.ThemePreference,
+                Coins = 0, // По умолчанию
+                CreatedAt = DateTime.UtcNow,
+                LastOnline = DateTime.UtcNow
+            };
+
             await _userService.Create(user);
-            return Ok();
+
+            var response = new UserResponse
+            {
+                Id = user.Id,
+                Username = user.Username,
+                Email = user.Email,
+                AvatarUrl = user.AvatarUrl,
+                Coins = user.Coins,
+                Status = user.Status,
+                CreatedAt = user.CreatedAt,
+                LastOnline = user.LastOnline,
+                ThemePreference = user.ThemePreference
+            };
+
+            return Ok(response);
         }
+
         /// <summary>
         /// Обновить данные пользователя
         /// </summary>
         /// <param name="id">ID пользователя</param>
-        /// <param name="user">Обновленные данные</param>
+        /// <param name="request">Обновленные данные</param>
         /// <returns>Обновленный пользователь</returns>
-        [HttpPut]
-        public async Task<IActionResult> Update(User user)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(Guid id, UpdateUserRequest request)
         {
-            await _userService.Update(user);
-            return Ok();
+            var existingUser = await _userService.GetById(id.ToString());
+            if (existingUser == null)
+            {
+                return NotFound($"User with id {id} not found");
+            }
+
+            // Обновляем только переданные поля
+            if (!string.IsNullOrEmpty(request.Username))
+                existingUser.Username = request.Username;
+
+            if (!string.IsNullOrEmpty(request.Email))
+                existingUser.Email = request.Email;
+
+            if (request.AvatarUrl != null)
+                existingUser.AvatarUrl = request.AvatarUrl;
+
+            if (request.Status != null)
+                existingUser.Status = request.Status;
+
+            if (!string.IsNullOrEmpty(request.ThemePreference))
+                existingUser.ThemePreference = request.ThemePreference;
+
+            await _userService.Update(existingUser);
+
+            var response = new UserResponse
+            {
+                Id = existingUser.Id,
+                Username = existingUser.Username,
+                Email = existingUser.Email,
+                AvatarUrl = existingUser.AvatarUrl,
+                Coins = existingUser.Coins,
+                Status = existingUser.Status,
+                CreatedAt = existingUser.CreatedAt,
+                LastOnline = existingUser.LastOnline,
+                ThemePreference = existingUser.ThemePreference
+            };
+
+            return Ok(response);
         }
+
         /// <summary>
         /// Удалить пользователя
         /// </summary>
         /// <param name="id">ID пользователя</param>
         /// <returns>Статус операции</returns>
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(Guid id)
         {
-            await _userService.Delete(id);
+            var existingUser = await _userService.GetById(id.ToString());
+            if (existingUser == null)
+            {
+                return NotFound($"User with id {id} not found");
+            }
+
+            await _userService.Delete(id.ToString());
             return NoContent();
         }
+
         /// <summary>
         /// Получить пользователя по ID
         /// </summary>
         /// <param name="id">ID пользователя</param>
         /// <returns>Данные пользователя</returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(string id)
+        public async Task<IActionResult> GetById(Guid id)
         {
-            var user = await _userService.GetById(id);
+            var user = await _userService.GetById(id.ToString());
             if (user == null)
             {
                 return NotFound($"User with id {id} not found");
             }
-            return Ok(user);
+
+            var response = new UserResponse
+            {
+                Id = user.Id,
+                Username = user.Username,
+                Email = user.Email,
+                AvatarUrl = user.AvatarUrl,
+                Coins = user.Coins,
+                Status = user.Status,
+                CreatedAt = user.CreatedAt,
+                LastOnline = user.LastOnline,
+                ThemePreference = user.ThemePreference
+            };
+
+            return Ok(response);
         }
     }
 }

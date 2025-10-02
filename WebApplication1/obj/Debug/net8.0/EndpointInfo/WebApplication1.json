@@ -35,17 +35,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Album"
+                "$ref": "#/components/schemas/CreateAlbumRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Album"
+                "$ref": "#/components/schemas/CreateAlbumRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Album"
+                "$ref": "#/components/schemas/CreateAlbumRequest"
               }
             }
           }
@@ -62,14 +62,15 @@
         "tags": [
           "Album"
         ],
-        "summary": "получить альбомы по id",
+        "summary": "получить альбом по id",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -90,7 +91,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -98,17 +100,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Album"
+                "$ref": "#/components/schemas/CreateAlbumRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Album"
+                "$ref": "#/components/schemas/CreateAlbumRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Album"
+                "$ref": "#/components/schemas/CreateAlbumRequest"
               }
             }
           }
@@ -130,7 +132,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -153,7 +156,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -185,17 +189,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Chat"
+                "$ref": "#/components/schemas/CreateChatRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Chat"
+                "$ref": "#/components/schemas/CreateChatRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Chat"
+                "$ref": "#/components/schemas/CreateChatRequest"
               }
             }
           }
@@ -219,7 +223,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -240,7 +245,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -248,17 +254,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Chat"
+                "$ref": "#/components/schemas/CreateChatRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Chat"
+                "$ref": "#/components/schemas/CreateChatRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Chat"
+                "$ref": "#/components/schemas/CreateChatRequest"
               }
             }
           }
@@ -280,7 +286,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -303,7 +310,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -326,7 +334,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -349,7 +358,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -357,7 +367,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -378,7 +389,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -386,7 +398,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -409,7 +422,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -441,17 +455,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Community"
+                "$ref": "#/components/schemas/CreateCommunityRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Community"
+                "$ref": "#/components/schemas/CreateCommunityRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Community"
+                "$ref": "#/components/schemas/CreateCommunityRequest"
               }
             }
           }
@@ -475,7 +489,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -496,7 +511,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -504,17 +520,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Community"
+                "$ref": "#/components/schemas/UpdateCommunityRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Community"
+                "$ref": "#/components/schemas/UpdateCommunityRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Community"
+                "$ref": "#/components/schemas/UpdateCommunityRequest"
               }
             }
           }
@@ -536,7 +552,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -552,14 +569,15 @@
         "tags": [
           "Community"
         ],
-        "summary": "получить участника сообщества по id",
+        "summary": "получить сообщества пользователя по id пользователя",
         "parameters": [
           {
             "name": "userId",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -582,7 +600,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -590,7 +609,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -621,7 +641,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -629,7 +650,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -652,7 +674,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -668,14 +691,15 @@
         "tags": [
           "Community"
         ],
-        "summary": "получить подписчиков пользователя",
+        "summary": "получить подписки пользователя",
         "parameters": [
           {
             "name": "userId",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -698,7 +722,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -706,7 +731,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -757,17 +783,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Medium"
+                "$ref": "#/components/schemas/UploadMediaRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Medium"
+                "$ref": "#/components/schemas/UploadMediaRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Medium"
+                "$ref": "#/components/schemas/UploadMediaRequest"
               }
             }
           }
@@ -791,7 +817,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -812,7 +839,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -820,17 +848,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Medium"
+                "$ref": "#/components/schemas/UploadMediaRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Medium"
+                "$ref": "#/components/schemas/UploadMediaRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Medium"
+                "$ref": "#/components/schemas/UploadMediaRequest"
               }
             }
           }
@@ -852,7 +880,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -875,7 +904,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -898,7 +928,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -914,7 +945,7 @@
         "tags": [
           "Media"
         ],
-        "summary": "получить медиа типа",
+        "summary": "получить медиа по типу",
         "parameters": [
           {
             "name": "type",
@@ -977,17 +1008,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Message"
+                "$ref": "#/components/schemas/CreateMessageRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Message"
+                "$ref": "#/components/schemas/CreateMessageRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Message"
+                "$ref": "#/components/schemas/CreateMessageRequest"
               }
             }
           }
@@ -1011,7 +1042,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1032,7 +1064,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1040,17 +1073,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Message"
+                "$ref": "#/components/schemas/CreateMessageRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Message"
+                "$ref": "#/components/schemas/CreateMessageRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Message"
+                "$ref": "#/components/schemas/CreateMessageRequest"
               }
             }
           }
@@ -1072,7 +1105,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1095,7 +1129,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1118,7 +1153,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1141,7 +1177,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -1149,7 +1186,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1165,14 +1203,15 @@
         "tags": [
           "Message"
         ],
-        "summary": "пометить прочитанным сообщение",
+        "summary": "пометить сообщение прочитанным",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1188,14 +1227,15 @@
         "tags": [
           "Message"
         ],
-        "summary": "пометить все сообщения пользоватея прочитанными в чате",
+        "summary": "пометить все сообщения пользователя прочитанными в чате",
         "parameters": [
           {
             "name": "chatId",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -1203,7 +1243,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1235,17 +1276,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Notification"
+                "$ref": "#/components/schemas/CreateNotificationRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Notification"
+                "$ref": "#/components/schemas/CreateNotificationRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Notification"
+                "$ref": "#/components/schemas/CreateNotificationRequest"
               }
             }
           }
@@ -1269,7 +1310,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1290,7 +1332,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1298,17 +1341,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Notification"
+                "$ref": "#/components/schemas/CreateNotificationRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Notification"
+                "$ref": "#/components/schemas/CreateNotificationRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Notification"
+                "$ref": "#/components/schemas/CreateNotificationRequest"
               }
             }
           }
@@ -1330,7 +1373,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1353,7 +1397,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1376,7 +1421,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1392,14 +1438,15 @@
         "tags": [
           "Notification"
         ],
-        "summary": "получить количество непрочитанных сообщений пользователя",
+        "summary": "получить количество непрочитанных уведомлений пользователя",
         "parameters": [
           {
             "name": "userId",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1422,7 +1469,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1445,7 +1493,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1477,17 +1526,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Post"
+                "$ref": "#/components/schemas/CreatePostRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Post"
+                "$ref": "#/components/schemas/CreatePostRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Post"
+                "$ref": "#/components/schemas/CreatePostRequest"
               }
             }
           }
@@ -1511,7 +1560,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1532,7 +1582,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1540,17 +1591,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Post"
+                "$ref": "#/components/schemas/UpdatePostRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Post"
+                "$ref": "#/components/schemas/UpdatePostRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Post"
+                "$ref": "#/components/schemas/UpdatePostRequest"
               }
             }
           }
@@ -1572,7 +1623,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1595,7 +1647,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1618,7 +1671,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1641,7 +1695,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -1649,7 +1704,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1672,7 +1728,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -1680,7 +1737,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1703,7 +1761,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1711,17 +1770,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Comment"
+                "$ref": "#/components/schemas/CreateCommentRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Comment"
+                "$ref": "#/components/schemas/CreateCommentRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Comment"
+                "$ref": "#/components/schemas/CreateCommentRequest"
               }
             }
           }
@@ -1743,7 +1802,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1775,17 +1835,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/StoreItem"
+                "$ref": "#/components/schemas/CreateStoreItemRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/StoreItem"
+                "$ref": "#/components/schemas/CreateStoreItemRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/StoreItem"
+                "$ref": "#/components/schemas/CreateStoreItemRequest"
               }
             }
           }
@@ -1809,7 +1869,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1830,7 +1891,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -1838,17 +1900,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/StoreItem"
+                "$ref": "#/components/schemas/CreateStoreItemRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/StoreItem"
+                "$ref": "#/components/schemas/CreateStoreItemRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/StoreItem"
+                "$ref": "#/components/schemas/CreateStoreItemRequest"
               }
             }
           }
@@ -1870,7 +1932,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2001,17 +2064,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Transaction"
+                "$ref": "#/components/schemas/CreateTransactionRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Transaction"
+                "$ref": "#/components/schemas/CreateTransactionRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Transaction"
+                "$ref": "#/components/schemas/CreateTransactionRequest"
               }
             }
           }
@@ -2035,7 +2098,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2056,7 +2120,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2064,17 +2129,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Transaction"
+                "$ref": "#/components/schemas/CreateTransactionRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Transaction"
+                "$ref": "#/components/schemas/CreateTransactionRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Transaction"
+                "$ref": "#/components/schemas/CreateTransactionRequest"
               }
             }
           }
@@ -2096,7 +2161,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2119,7 +2185,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2142,30 +2209,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Transaction/type/{type}": {
-      "get": {
-        "tags": [
-          "Transaction"
-        ],
-        "summary": "получить транзакции типа",
-        "parameters": [
-          {
-            "name": "type",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2219,7 +2264,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2247,54 +2293,23 @@
           "User"
         ],
         "summary": "Создать нового пользователя",
-        "description": "Пример запроса:\r\n            \r\n    POST /User\r\n    {\r\n        \"username\": \"johndoe\",\r\n        \"email\": \"john@example.com\",\r\n        \"passwordHash\": \"hashed_password\",\r\n        \"avatarUrl\": \"https://example.com/avatar.jpg\",\r\n        \"coins\": 100,\r\n        \"status\": \"Online\"\r\n    }",
+        "description": "Пример запроса:\r\n            \r\n    POST /User\r\n    {\r\n        \"username\": \"johndoe\",\r\n        \"email\": \"john@example.com\",\r\n        \"password\": \"password123\",\r\n        \"avatarUrl\": \"https://example.com/avatar.jpg\",\r\n        \"status\": \"Online\",\r\n        \"themePreference\": \"dark\"\r\n    }",
         "requestBody": {
           "description": "Данные пользователя",
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/CreateUserRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/CreateUserRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "User"
-        ],
-        "summary": "Обновить данные пользователя",
-        "requestBody": {
-          "description": "Обновленные данные",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/User"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/User"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/CreateUserRequest"
               }
             }
           }
@@ -2307,6 +2322,49 @@
       }
     },
     "/api/User/{id}": {
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Обновить данные пользователя",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID пользователя",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Обновленные данные",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "delete": {
         "tags": [
           "User"
@@ -2319,7 +2377,8 @@
             "description": "ID пользователя",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2341,7 +2400,8 @@
             "description": "ID пользователя",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2373,17 +2433,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserInventory"
+                "$ref": "#/components/schemas/AddItemToInventoryRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserInventory"
+                "$ref": "#/components/schemas/AddItemToInventoryRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UserInventory"
+                "$ref": "#/components/schemas/AddItemToInventoryRequest"
               }
             }
           }
@@ -2403,17 +2463,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserInventory"
+                "$ref": "#/components/schemas/EquipItemRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserInventory"
+                "$ref": "#/components/schemas/EquipItemRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UserInventory"
+                "$ref": "#/components/schemas/EquipItemRequest"
               }
             }
           }
@@ -2430,14 +2490,15 @@
         "tags": [
           "UserInventory"
         ],
-        "summary": "получить инвыентарь пользователя",
+        "summary": "получить инвентарь пользователя",
         "parameters": [
           {
             "name": "userId",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2460,7 +2521,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -2468,7 +2530,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2489,7 +2552,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -2497,7 +2561,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2513,14 +2578,15 @@
         "tags": [
           "UserInventory"
         ],
-        "summary": "экипировать предмет пользоватеоля",
+        "summary": "экипировать предмет пользователя",
         "parameters": [
           {
             "name": "userId",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -2528,7 +2594,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2551,7 +2618,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           },
           {
@@ -2559,7 +2627,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -2749,17 +2818,29 @@
   },
   "components": {
     "schemas": {
-      "Album": {
+      "AddItemToInventoryRequest": {
         "type": "object",
         "properties": {
-          "id": {
+          "userId": {
             "type": "string",
             "format": "uuid"
           },
+          "itemId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "isEquipped": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateAlbumRequest": {
+        "type": "object",
+        "properties": {
           "communityId": {
             "type": "string",
-            "format": "uuid",
-            "nullable": true
+            "format": "uuid"
           },
           "name": {
             "type": "string",
@@ -2768,32 +2849,13 @@
           "description": {
             "type": "string",
             "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "community": {
-            "$ref": "#/components/schemas/Community"
-          },
-          "media": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Medium"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Chat": {
+      "CreateChatRequest": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "communityId": {
             "type": "string",
             "format": "uuid",
@@ -2806,109 +2868,31 @@
           "type": {
             "type": "string",
             "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "chatParticipants": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ChatParticipant"
-            },
-            "nullable": true
-          },
-          "community": {
-            "$ref": "#/components/schemas/Community"
-          },
-          "messages": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Message"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "ChatParticipant": {
+      "CreateCommentRequest": {
         "type": "object",
         "properties": {
-          "chatId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "userId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "joinedAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "lastRead": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "chat": {
-            "$ref": "#/components/schemas/Chat"
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Comment": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "postId": {
             "type": "string",
-            "format": "uuid",
-            "nullable": true
+            "format": "uuid"
           },
           "authorId": {
             "type": "string",
-            "format": "uuid",
-            "nullable": true
+            "format": "uuid"
           },
           "text": {
             "type": "string",
             "nullable": true
-          },
-          "likesCount": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "author": {
-            "$ref": "#/components/schemas/User"
-          },
-          "post": {
-            "$ref": "#/components/schemas/Post"
           }
         },
         "additionalProperties": false
       },
-      "Community": {
+      "CreateCommunityRequest": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "name": {
             "type": "string",
             "nullable": true
@@ -2925,105 +2909,20 @@
             "type": "string",
             "nullable": true
           },
-          "creatorId": {
-            "type": "string",
-            "format": "uuid",
-            "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
           "tags": {
             "type": "string",
             "nullable": true
           },
-          "memberCount": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "albums": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Album"
-            },
-            "nullable": true
-          },
-          "chats": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Chat"
-            },
-            "nullable": true
-          },
-          "creator": {
-            "$ref": "#/components/schemas/User"
-          },
-          "posts": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Post"
-            },
-            "nullable": true
-          },
-          "subscriptions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Subscription"
-            },
-            "nullable": true
+          "creator_id": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false
       },
-      "Medium": {
+      "CreateMessageRequest": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "albumId": {
-            "type": "string",
-            "format": "uuid",
-            "nullable": true
-          },
-          "url": {
-            "type": "string",
-            "nullable": true
-          },
-          "type": {
-            "type": "string",
-            "nullable": true
-          },
-          "uploadedBy": {
-            "type": "string",
-            "format": "uuid",
-            "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "album": {
-            "$ref": "#/components/schemas/Album"
-          },
-          "uploadedByNavigation": {
-            "$ref": "#/components/schemas/User"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Message": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "chatId": {
             "type": "string",
             "format": "uuid"
@@ -3035,35 +2934,16 @@
           "content": {
             "type": "string",
             "nullable": true
-          },
-          "readStatus": {
-            "type": "boolean"
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "chat": {
-            "$ref": "#/components/schemas/Chat"
-          },
-          "sender": {
-            "$ref": "#/components/schemas/User"
           }
         },
         "additionalProperties": false
       },
-      "Notification": {
+      "CreateNotificationRequest": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "userId": {
             "type": "string",
-            "format": "uuid",
-            "nullable": true
+            "format": "uuid"
           },
           "type": {
             "type": "string",
@@ -3073,37 +2953,20 @@
             "type": "string",
             "format": "uuid",
             "nullable": true
-          },
-          "isRead": {
-            "type": "boolean"
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
           }
         },
         "additionalProperties": false
       },
-      "Post": {
+      "CreatePostRequest": {
         "type": "object",
         "properties": {
-          "id": {
+          "authorId": {
             "type": "string",
             "format": "uuid"
           },
-          "authorId": {
-            "type": "string",
-            "format": "uuid",
-            "nullable": true
-          },
           "communityId": {
             "type": "string",
-            "format": "uuid",
-            "nullable": true
+            "format": "uuid"
           },
           "content": {
             "type": "string",
@@ -3113,46 +2976,16 @@
             "type": "string",
             "nullable": true
           },
-          "likesCount": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "commentsCount": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
           "visibility": {
             "type": "string",
             "nullable": true
-          },
-          "author": {
-            "$ref": "#/components/schemas/User"
-          },
-          "comments": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Comment"
-            },
-            "nullable": true
-          },
-          "community": {
-            "$ref": "#/components/schemas/Community"
           }
         },
         "additionalProperties": false
       },
-      "StoreItem": {
+      "CreateStoreItemRequest": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "name": {
             "type": "string",
             "nullable": true
@@ -3176,99 +3009,32 @@
           "category": {
             "type": "string",
             "nullable": true
-          },
-          "transactions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Transaction"
-            },
-            "nullable": true
-          },
-          "userInventories": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/UserInventory"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Subscription": {
+      "CreateTransactionRequest": {
         "type": "object",
         "properties": {
           "userId": {
             "type": "string",
             "format": "uuid"
-          },
-          "communityId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "role": {
-            "type": "string",
-            "nullable": true
-          },
-          "joinedAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "community": {
-            "$ref": "#/components/schemas/Community"
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Transaction": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "userId": {
-            "type": "string",
-            "format": "uuid",
-            "nullable": true
           },
           "amount": {
             "type": "integer",
             "format": "int32"
           },
-          "type": {
-            "type": "string",
-            "nullable": true
-          },
           "itemId": {
             "type": "string",
             "format": "uuid",
             "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "item": {
-            "$ref": "#/components/schemas/StoreItem"
-          },
-          "user": {
-            "$ref": "#/components/schemas/User"
           }
         },
         "additionalProperties": false
       },
-      "User": {
+      "CreateUserRequest": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "username": {
             "type": "string",
             "nullable": true
@@ -3277,7 +3043,7 @@
             "type": "string",
             "nullable": true
           },
-          "passwordHash": {
+          "password": {
             "type": "string",
             "nullable": true
           },
@@ -3285,107 +3051,18 @@
             "type": "string",
             "nullable": true
           },
-          "coins": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
           "status": {
             "type": "string",
-            "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "lastOnline": {
-            "type": "string",
-            "format": "date-time",
             "nullable": true
           },
           "themePreference": {
             "type": "string",
             "nullable": true
-          },
-          "chatParticipants": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ChatParticipant"
-            },
-            "nullable": true
-          },
-          "comments": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Comment"
-            },
-            "nullable": true
-          },
-          "communities": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Community"
-            },
-            "nullable": true
-          },
-          "media": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Medium"
-            },
-            "nullable": true
-          },
-          "messages": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Message"
-            },
-            "nullable": true
-          },
-          "notifications": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Notification"
-            },
-            "nullable": true
-          },
-          "posts": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Post"
-            },
-            "nullable": true
-          },
-          "subscriptions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Subscription"
-            },
-            "nullable": true
-          },
-          "transactions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Transaction"
-            },
-            "nullable": true
-          },
-          "userInventories": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/UserInventory"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "UserInventory": {
-        "required": [
-          "item",
-          "user"
-        ],
+      "EquipItemRequest": {
         "type": "object",
         "properties": {
           "userId": {
@@ -3396,18 +3073,101 @@
             "type": "string",
             "format": "uuid"
           },
-          "purchasedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
           "isEquipped": {
             "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateCommunityRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
           },
-          "user": {
-            "$ref": "#/components/schemas/User"
+          "description": {
+            "type": "string",
+            "nullable": true
           },
-          "item": {
-            "$ref": "#/components/schemas/StoreItem"
+          "avatarUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "bannerUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "tags": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePostRequest": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "images": {
+            "type": "string",
+            "nullable": true
+          },
+          "visibility": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateUserRequest": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "avatarUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "themePreference": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UploadMediaRequest": {
+        "type": "object",
+        "properties": {
+          "albumId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "uploadedBy": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false

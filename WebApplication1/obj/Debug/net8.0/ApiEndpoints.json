@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "album",
-        "Type": "Domain.Models.Album",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Album.CreateAlbumRequest",
         "IsRequired": true
       }
     ],
@@ -35,7 +35,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -51,12 +51,12 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
-        "Name": "album",
-        "Type": "Domain.Models.Album",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Album.CreateAlbumRequest",
         "IsRequired": true
       }
     ],
@@ -72,7 +72,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -88,7 +88,7 @@
     "Parameters": [
       {
         "Name": "communityId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -113,8 +113,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "chat",
-        "Type": "Domain.Models.Chat",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Chat.CreateChatRequest",
         "IsRequired": true
       }
     ],
@@ -130,7 +130,7 @@
     "Parameters": [
       {
         "Name": "chatId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -146,12 +146,12 @@
     "Parameters": [
       {
         "Name": "chatId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -167,12 +167,12 @@
     "Parameters": [
       {
         "Name": "chatId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -188,7 +188,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -204,12 +204,12 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
-        "Name": "chat",
-        "Type": "Domain.Models.Chat",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Chat.CreateChatRequest",
         "IsRequired": true
       }
     ],
@@ -225,7 +225,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -241,7 +241,7 @@
     "Parameters": [
       {
         "Name": "communityId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -257,7 +257,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -282,8 +282,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "community",
-        "Type": "Domain.Models.Community",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Community.CreateCommunityRequest",
         "IsRequired": true
       }
     ],
@@ -299,12 +299,12 @@
     "Parameters": [
       {
         "Name": "communityId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
@@ -325,12 +325,12 @@
     "Parameters": [
       {
         "Name": "communityId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
@@ -351,7 +351,7 @@
     "Parameters": [
       {
         "Name": "communityId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -367,12 +367,12 @@
     "Parameters": [
       {
         "Name": "communityId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -388,7 +388,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -404,12 +404,12 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
-        "Name": "community",
-        "Type": "Domain.Models.Community",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Community.UpdateCommunityRequest",
         "IsRequired": true
       }
     ],
@@ -425,7 +425,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -441,7 +441,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -457,7 +457,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -482,8 +482,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "medium",
-        "Type": "Domain.Models.Medium",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Media.UploadMediaRequest",
         "IsRequired": true
       }
     ],
@@ -499,7 +499,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -515,12 +515,12 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
-        "Name": "medium",
-        "Type": "Domain.Models.Medium",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Media.UploadMediaRequest",
         "IsRequired": true
       }
     ],
@@ -536,7 +536,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -552,7 +552,7 @@
     "Parameters": [
       {
         "Name": "albumId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -600,7 +600,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -625,8 +625,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "message",
-        "Type": "Domain.Models.Message",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Message.CreateMessageRequest",
         "IsRequired": true
       }
     ],
@@ -642,7 +642,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -658,12 +658,12 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
-        "Name": "message",
-        "Type": "Domain.Models.Message",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Message.CreateMessageRequest",
         "IsRequired": true
       }
     ],
@@ -679,7 +679,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -695,7 +695,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -711,7 +711,7 @@
     "Parameters": [
       {
         "Name": "chatId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -727,12 +727,12 @@
     "Parameters": [
       {
         "Name": "chatId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -748,12 +748,12 @@
     "Parameters": [
       {
         "Name": "chatId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -769,7 +769,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -794,8 +794,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "notification",
-        "Type": "Domain.Models.Notification",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Notification.CreateNotificationRequest",
         "IsRequired": true
       }
     ],
@@ -811,7 +811,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -827,12 +827,12 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
-        "Name": "notification",
-        "Type": "Domain.Models.Notification",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Notification.CreateNotificationRequest",
         "IsRequired": true
       }
     ],
@@ -848,7 +848,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -864,7 +864,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -880,7 +880,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -896,7 +896,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -912,7 +912,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -928,7 +928,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -953,8 +953,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "post",
-        "Type": "Domain.Models.Post",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Post.CreatePostRequest",
         "IsRequired": true
       }
     ],
@@ -970,7 +970,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -986,12 +986,12 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
-        "Name": "post",
-        "Type": "Domain.Models.Post",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Post.UpdatePostRequest",
         "IsRequired": true
       }
     ],
@@ -1007,7 +1007,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1023,12 +1023,12 @@
     "Parameters": [
       {
         "Name": "postId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
-        "Name": "comment",
-        "Type": "Domain.Models.Comment",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Comment.CreateCommentRequest",
         "IsRequired": true
       }
     ],
@@ -1044,7 +1044,7 @@
     "Parameters": [
       {
         "Name": "postId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1060,12 +1060,12 @@
     "Parameters": [
       {
         "Name": "postId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1081,12 +1081,12 @@
     "Parameters": [
       {
         "Name": "postId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1102,7 +1102,7 @@
     "Parameters": [
       {
         "Name": "communityId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1118,7 +1118,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1143,8 +1143,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "storeItem",
-        "Type": "Domain.Models.StoreItem",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Store.CreateStoreItemRequest",
         "IsRequired": true
       }
     ],
@@ -1160,7 +1160,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1176,12 +1176,12 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
-        "Name": "storeItem",
-        "Type": "Domain.Models.StoreItem",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Store.CreateStoreItemRequest",
         "IsRequired": true
       }
     ],
@@ -1197,7 +1197,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1291,8 +1291,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "transaction",
-        "Type": "Domain.Models.Transaction",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Transaction.CreateTransactionRequest",
         "IsRequired": true
       }
     ],
@@ -1308,7 +1308,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1324,12 +1324,12 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
-        "Name": "transaction",
-        "Type": "Domain.Models.Transaction",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Transaction.CreateTransactionRequest",
         "IsRequired": true
       }
     ],
@@ -1345,7 +1345,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1382,23 +1382,7 @@
     "Parameters": [
       {
         "Name": "itemId",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BackendApi.Controllers.TransactionController",
-    "Method": "GetByType",
-    "RelativePath": "api/Transaction/type/{type}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "type",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1414,7 +1398,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1430,7 +1414,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1455,8 +1439,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "Domain.Models.User",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.User.CreateUserRequest",
         "IsRequired": true
       }
     ],
@@ -1465,14 +1449,19 @@
   {
     "ContainingType": "BackendApi.Controllers.UserController",
     "Method": "Update",
-    "RelativePath": "api/User",
+    "RelativePath": "api/User/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "Domain.Models.User",
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.User.UpdateUserRequest",
         "IsRequired": true
       }
     ],
@@ -1488,7 +1477,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1504,7 +1493,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1529,8 +1518,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userInventory",
-        "Type": "Domain.Models.UserInventory",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Inventory.AddItemToInventoryRequest",
         "IsRequired": true
       }
     ],
@@ -1545,8 +1534,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userInventory",
-        "Type": "Domain.Models.UserInventory",
+        "Name": "request",
+        "Type": "WebApplication1.Contracts.Inventory.EquipItemRequest",
         "IsRequired": true
       }
     ],
@@ -1562,7 +1551,7 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1578,12 +1567,12 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "itemId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1599,12 +1588,12 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "itemId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1620,12 +1609,12 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "itemId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -1641,12 +1630,12 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       },
       {
         "Name": "itemId",
-        "Type": "System.String",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

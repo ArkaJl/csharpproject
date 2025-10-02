@@ -15,7 +15,7 @@ public partial class Medium
 
     public Guid? UploadedBy { get; set; }
 
-    public DateTime? CreatedAt { get; set; }
+    public DateTime CreatedAt { get; set; }
 
     public virtual Album? Album { get; set; }
 

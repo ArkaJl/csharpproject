@@ -1,23 +1,13 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using Domain.Models;
 
-namespace Domain.Models
+public class UserInventory
 {
-    [Table("user_inventory")]
-    public class UserInventory
-    {
-        [ForeignKey("User")]
-        public Guid UserId { get; set; }
+    public Guid UserId { get; set; }
+    public Guid ItemId { get; set; }
+    public DateTime PurchasedAt { get; set; }
+    public bool IsEquipped { get; set; }
 
-        [ForeignKey("StoreItem")]
-        public Guid ItemId { get; set; }
-
-        public DateTime PurchasedAt { get; set; }
-
-        public bool IsEquipped { get; set; }
-
-        public virtual required User User { get; set; }
-        public virtual required StoreItem Item { get; set; }
-    }
+    // Навигационные свойства (опционально)
+    public virtual User? User { get; set; }
+    public virtual StoreItem? Item { get; set; }
 }
