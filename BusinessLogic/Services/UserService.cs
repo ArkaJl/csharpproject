@@ -8,7 +8,7 @@ namespace BusinessLogic.Services
 {
     public class UserService : IUserService
     {
-        private readonly IRepositoryWrapper _repositoryWrapper;
+        private IRepositoryWrapper _repositoryWrapper;
 
         public UserService(IRepositoryWrapper repositoryWrapper)
         {
@@ -30,6 +30,10 @@ namespace BusinessLogic.Services
 
         public async Task Create(User model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
             await _repositoryWrapper.User.Create(model);
             await _repositoryWrapper.SaveAsync();
         }

@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD369281-A283-48B7-A3AB-FC2719CDD183}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|c:\\users\\student\\documents\\alexeev\\sas\\csharpproject\\businesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD369281-A283-48B7-A3AB-FC2719CDD183}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|solutionrelative:businesslogic.tests\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD369281-A283-48B7-A3AB-FC2719CDD183}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|c:\\users\\student\\documents\\alexeev\\sas\\csharpproject\\businesslogic.tests\\businesslogic.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DD369281-A283-48B7-A3AB-FC2719CDD183}|BusinessLogic.Tests\\BusinessLogic.Tests.csproj|solutionrelative:businesslogic.tests\\businesslogic.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\student\\documents\\alexeev\\sas\\csharpproject\\businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9AE6E3-2E6C-4D32-9A72-676C8C187579}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\BusinessLogic\\Services\\UserService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\UserService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T14:52:38.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BusinessLogic.Tests",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\BusinessLogic.Tests\\BusinessLogic.Tests.csproj",
+              "RelativeDocumentMoniker": "BusinessLogic.Tests\\BusinessLogic.Tests.csproj",
+              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\BusinessLogic.Tests\\BusinessLogic.Tests.csproj",
+              "RelativeToolTip": "BusinessLogic.Tests\\BusinessLogic.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-07T14:05:38.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\BusinessLogic.Tests\\UserServiceTest.cs",
+              "RelativeDocumentMoniker": "BusinessLogic.Tests\\UserServiceTest.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\BusinessLogic.Tests\\UserServiceTest.cs",
+              "RelativeToolTip": "BusinessLogic.Tests\\UserServiceTest.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T14:05:49.639Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
