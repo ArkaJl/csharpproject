@@ -1,0 +1,68 @@
+name: .NET Build and Code Quality
+
+on:
+  push:
+    branches: [ "**" ]  # Запускать для всех веток
+  pull_request:
+    branches: [ "main", "develop" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.x'
+        
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    - name: Build
+      run: dotnet build --no-restore --configuration Release
+      
+    - name: Run tests
+      run: dotnet test --no-build --verbosity normal --configuration Release
+      
+  code-quality:
+    runs-on: ubuntu-latest
+    needs: build  # Зависит от успешной сборки
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.x'
+        
+    - name: Install dotnet-format
+      run: dotnet tool install -g dotnet-format
+      
+    - name: Check code formatting
+      run: dotnet format --verify-no-changes --verbosity diagnostic
+      
+    - name: Run analyzers
+      run: dotnet build --configuration Release --verbosity minimal /p:RunAnalyzers=true
+      
+  security-scan:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.x'
+        
+    - name: Security scan with dotnet-outdated
+      run: |
+        dotnet tool install -g dotnet-outdated
+        dotnet outdated --fail-on-updates
