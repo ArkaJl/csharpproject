@@ -89,9 +89,10 @@ namespace BusinessLogic.Services
 
         public async Task<int> LikePost(string postId, string userId)
         {
-            var post = await _repositoryWrapper.Post
+            // Используем синхронный FirstOrDefault вместо FirstOrDefaultAsync
+            var post = _repositoryWrapper.Post
                 .FindByCondition(p => p.Id.ToString() == postId)
-                .FirstOrDefaultAsync();
+                .FirstOrDefault(); // убрали Async
 
             if (post != null)
             {
@@ -106,9 +107,10 @@ namespace BusinessLogic.Services
 
         public async Task<int> UnlikePost(string postId, string userId)
         {
-            var post = await _repositoryWrapper.Post
+            // Используем синхронный FirstOrDefault вместо FirstOrDefaultAsync
+            var post = _repositoryWrapper.Post
                 .FindByCondition(p => p.Id.ToString() == postId)
-                .FirstOrDefaultAsync();
+                .FirstOrDefault(); // убрали Async
 
             if (post != null && post.LikesCount > 0)
             {
@@ -123,9 +125,10 @@ namespace BusinessLogic.Services
 
         public async Task<int> AddComment(string postId, Comment comment)
         {
-            var post = await _repositoryWrapper.Post
+            // Используем синхронный FirstOrDefault вместо FirstOrDefaultAsync
+            var post = _repositoryWrapper.Post
                 .FindByCondition(p => p.Id.ToString() == postId)
-                .FirstOrDefaultAsync();
+                .FirstOrDefault(); // убрали Async
 
             if (post != null)
             {

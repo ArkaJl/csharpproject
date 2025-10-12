@@ -34,12 +34,35 @@ namespace BusinessLogic.Services
             {
                 throw new ArgumentNullException(nameof(model));
             }
+
+            if (string.IsNullOrEmpty(model.Username))
+                throw new InvalidOperationException(nameof(model.Username));
+
+            if (string.IsNullOrEmpty(model.Email))
+                throw new InvalidOperationException(nameof(model.Email));
+
+            if (string.IsNullOrEmpty(model.PasswordHash))
+                throw new InvalidOperationException(nameof(model.PasswordHash));
+
             await _repositoryWrapper.User.Create(model);
             await _repositoryWrapper.SaveAsync();
         }
 
         public async Task Update(User model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+            if (string.IsNullOrEmpty(model.Username))
+                throw new InvalidOperationException(nameof(model.Username));
+
+            if (string.IsNullOrEmpty(model.Email))
+                throw new InvalidOperationException(nameof(model.Email));
+
+            if (string.IsNullOrEmpty(model.PasswordHash))
+                throw new InvalidOperationException(nameof(model.PasswordHash));
+
             await _repositoryWrapper.User.Update(model);
             await _repositoryWrapper.SaveAsync();
         }
