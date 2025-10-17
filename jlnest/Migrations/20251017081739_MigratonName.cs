@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class MigratonNameFirst : Migration
+    public partial class MigratonName : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +18,7 @@ namespace DataAccess.Migrations
                 name: "store_items",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "'uuid()'"),
+                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "(UUID())"),
                     name = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false),
                     type = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: true),
                     price = table.Column<int>(type: "int", nullable: false),
@@ -36,7 +36,7 @@ namespace DataAccess.Migrations
                 name: "users",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "'uuid()'"),
+                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "(UUID())"),
                     username = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false),
                     email = table.Column<string>(type: "varchar(255)", nullable: false),
                     password_hash = table.Column<string>(type: "text", nullable: false),
@@ -57,7 +57,7 @@ namespace DataAccess.Migrations
                 name: "communities",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "'uuid()'"),
+                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "(UUID())"),
                     name = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false),
                     description = table.Column<string>(type: "text", nullable: true),
                     avatar_url = table.Column<string>(type: "text", nullable: true),
@@ -83,7 +83,7 @@ namespace DataAccess.Migrations
                 name: "notifications",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "'uuid()'"),
+                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "(UUID())"),
                     user_id = table.Column<Guid>(type: "char(36)", nullable: true),
                     type = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: true),
                     source_id = table.Column<Guid>(type: "char(36)", nullable: true),
@@ -106,7 +106,7 @@ namespace DataAccess.Migrations
                 name: "transactions",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "'uuid()'"),
+                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "(UUID())"),
                     user_id = table.Column<Guid>(type: "char(36)", nullable: true),
                     amount = table.Column<int>(type: "int", nullable: false),
                     type = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: true),
@@ -162,7 +162,7 @@ namespace DataAccess.Migrations
                 name: "albums",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "'uuid()'"),
+                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "(UUID())"),
                     community_id = table.Column<Guid>(type: "char(36)", nullable: true),
                     name = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false),
                     description = table.Column<string>(type: "text", nullable: true),
@@ -184,7 +184,7 @@ namespace DataAccess.Migrations
                 name: "chats",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "'uuid()'"),
+                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "(UUID())"),
                     community_id = table.Column<Guid>(type: "char(36)", nullable: true),
                     name = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true),
                     type = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: true, defaultValueSql: "'private'"),
@@ -206,7 +206,7 @@ namespace DataAccess.Migrations
                 name: "posts",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "'uuid()'"),
+                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "(UUID())"),
                     author_id = table.Column<Guid>(type: "char(36)", nullable: true),
                     community_id = table.Column<Guid>(type: "char(36)", nullable: true),
                     content = table.Column<string>(type: "text", nullable: false),
@@ -265,12 +265,12 @@ namespace DataAccess.Migrations
                 name: "media",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "'uuid()'"),
+                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "(UUID())"),
                     album_id = table.Column<Guid>(type: "char(36)", nullable: true),
                     url = table.Column<string>(type: "text", nullable: false),
                     type = table.Column<string>(type: "varchar(10)", maxLength: 10, nullable: true),
                     uploaded_by = table.Column<Guid>(type: "char(36)", nullable: true),
-                    created_at = table.Column<DateTime>(type: "timestamp", nullable: true, defaultValueSql: "CURRENT_TIMESTAMP")
+                    created_at = table.Column<DateTime>(type: "timestamp", nullable: false, defaultValueSql: "CURRENT_TIMESTAMP")
                 },
                 constraints: table =>
                 {
@@ -321,12 +321,12 @@ namespace DataAccess.Migrations
                 name: "messages",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "'uuid()'"),
+                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "(UUID())"),
                     chat_id = table.Column<Guid>(type: "char(36)", nullable: false),
                     sender_id = table.Column<Guid>(type: "char(36)", nullable: false),
                     content = table.Column<string>(type: "text", nullable: false),
                     read_status = table.Column<bool>(type: "tinyint(1)", nullable: false, defaultValueSql: "'0'"),
-                    created_at = table.Column<DateTime>(type: "timestamp", nullable: true, defaultValueSql: "CURRENT_TIMESTAMP")
+                    created_at = table.Column<DateTime>(type: "timestamp", nullable: false, defaultValueSql: "CURRENT_TIMESTAMP")
                 },
                 constraints: table =>
                 {
@@ -350,7 +350,7 @@ namespace DataAccess.Migrations
                 name: "comments",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "'uuid()'"),
+                    id = table.Column<Guid>(type: "char(36)", nullable: false, defaultValueSql: "(UUID())"),
                     post_id = table.Column<Guid>(type: "char(36)", nullable: true),
                     author_id = table.Column<Guid>(type: "char(36)", nullable: true),
                     text = table.Column<string>(type: "text", nullable: false),

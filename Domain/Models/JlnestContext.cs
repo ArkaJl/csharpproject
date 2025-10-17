@@ -50,6 +50,7 @@ public partial class JlnestContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+
         modelBuilder.Entity<Album>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
@@ -59,7 +60,7 @@ public partial class JlnestContext : DbContext
             entity.HasIndex(e => e.CommunityId, "community_id");
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.CommunityId).HasColumnName("community_id");
             entity.Property(e => e.CreatedAt)
@@ -88,7 +89,7 @@ public partial class JlnestContext : DbContext
             entity.HasIndex(e => e.CommunityId, "community_id");
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.CommunityId).HasColumnName("community_id");
             entity.Property(e => e.CreatedAt)
@@ -147,7 +148,7 @@ public partial class JlnestContext : DbContext
             entity.HasIndex(e => e.PostId, "idx_comments_post");
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.AuthorId).HasColumnName("author_id");
             entity.Property(e => e.CreatedAt)
@@ -182,7 +183,7 @@ public partial class JlnestContext : DbContext
             entity.HasIndex(e => e.CreatorId, "creator_id");
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.AvatarUrl)
                 .HasColumnType("text")
@@ -221,7 +222,7 @@ public partial class JlnestContext : DbContext
                 .ToView("community_overview");
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.LastActivity)
                 .HasColumnType("timestamp")
@@ -246,7 +247,7 @@ public partial class JlnestContext : DbContext
             entity.HasIndex(e => e.UploadedBy, "uploaded_by");
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.AlbumId).HasColumnName("album_id");
             entity.Property(e => e.CreatedAt)
@@ -283,7 +284,7 @@ public partial class JlnestContext : DbContext
             entity.HasIndex(e => e.SenderId, "sender_id");
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.ChatId).HasColumnName("chat_id");
             entity.Property(e => e.Content)
@@ -318,7 +319,7 @@ public partial class JlnestContext : DbContext
             entity.HasIndex(e => new { e.UserId, e.IsRead, e.CreatedAt }, "idx_notifications_user");
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
@@ -350,7 +351,7 @@ public partial class JlnestContext : DbContext
             entity.HasIndex(e => new { e.CommunityId, e.CreatedAt }, "idx_posts_community");
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.AuthorId).HasColumnName("author_id");
             entity.Property(e => e.CommentsCount)
@@ -393,7 +394,7 @@ public partial class JlnestContext : DbContext
             entity.ToTable("store_items");
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.Category)
                 .HasMaxLength(50)
@@ -454,7 +455,7 @@ public partial class JlnestContext : DbContext
             entity.HasIndex(e => e.UserId, "user_id");
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.Amount).HasColumnName("amount");
             entity.Property(e => e.CreatedAt)
@@ -489,7 +490,7 @@ public partial class JlnestContext : DbContext
             entity.HasIndex(e => e.Username, "username").IsUnique();
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.AvatarUrl)
                 .HasColumnType("text")
@@ -530,7 +531,7 @@ public partial class JlnestContext : DbContext
             entity.Property(e => e.CommentsCount).HasColumnName("comments_count");
             entity.Property(e => e.CommunitiesCount).HasColumnName("communities_count");
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("'uuid()'")
+                .HasDefaultValueSql("(UUID())")
                 .HasColumnName("id");
             entity.Property(e => e.LastOnline)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")

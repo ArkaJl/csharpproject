@@ -26,7 +26,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         Version = "v1",
         Title = "JLNest Social Network API",
-        Description = "API ‰Îˇ ÒÓˆË‡Î¸ÌÓÈ ÒÂÚË JLNest Ò ÒÓÓ·˘ÂÒÚ‚‡ÏË, ˜‡Ú‡ÏË Ë Ï‡„‡ÁËÌÓ",
+        Description = "API ÔøΩÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ ÔøΩÔøΩÔøΩÔøΩ JLNest ÔøΩ ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ, ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ ÔøΩ ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ",
         Contact = new OpenApiContact
         {
             Name = "JLNest Support",
@@ -44,8 +44,7 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 builder.Services.AddDbContext<JlnestContext>(options =>
-    options.UseMySQL(
-        "Server=localhost;Port=3306;Database=jlnest;User=root;Password=12345;",
+    options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection"),
         b => b.MigrationsAssembly("DataAccess")
     ));
 
@@ -64,28 +63,44 @@ builder.Services.AddScoped<IMediaService, MediaService>();
 
 var app = builder.Build();
 
+
 using (var scope = app.Services.CreateScope())
 {
-    var context = scope.ServiceProvider.GetRequiredService<JlnestContext>();
-
-    try
+    var services = scope.ServiceProvider;
+    var logger = services.GetRequiredService<ILogger<Program>>();
+    var context = services.GetRequiredService<JlnestContext>();
+    
+    logger.LogInformation("–û–∂–∏–¥–∞–Ω–∏–µ –ø–æ–¥–∫–ª—é—á–µ–Ω–∏—è –∫ MySQL...");
+    
+    int retries = 10;
+    for (int i = 0; i < retries; i++)
     {
-        if (context.Database.CanConnect())
+        try
         {
-            Console.WriteLine("œÓ‰ÍÎ˛˜ÂÌËÂ Í ¡ƒ ÛÒÔÂ¯ÌÓ");
-
-            // œÓ‚ÂËÏ ÂÒÚ¸ ÎË ‰‡ÌÌ˚Â
-            var userCount = context.Users.Count();
-            Console.WriteLine($" ÓÎË˜ÂÒÚ‚Ó ÔÓÎ¸ÁÓ‚‡ÚÂÎÂÈ ‚ ¡ƒ: {userCount}");
+            logger.LogInformation($"–ü–æ–ø—ã—Ç–∫–∞ –ø–æ–¥–∫–ª—é—á–µ–Ω–∏—è –∫ MySQL ({i + 1}/{retries})...");
+            
+            // –ü–†–û–°–¢–ê–Ø –ü–†–û–í–ï–†–ö–ê –ü–û–î–ö–õ–Æ–ß–ï–ù–ò–Ø
+            if (context.Database.CanConnect())
+            {
+                logger.LogInformation("–ü–æ–¥–∫–ª—é—á–µ–Ω–∏–µ –∫ MySQL —É—Å–ø–µ—à–Ω–æ!");
+                
+                // –ê–í–¢–û–ú–ê–¢–ò–ß–ï–°–ö–û–ï –ü–†–ò–ú–ï–ù–ï–ù–ò–ï –ú–ò–ì–†–ê–¶–ò–ô
+                logger.LogInformation("–ü—Ä–∏–º–µ–Ω–µ–Ω–∏–µ –º–∏–≥—Ä–∞—Ü–∏–π...");
+                context.Database.Migrate();
+                logger.LogInformation("–ú–∏–≥—Ä–∞—Ü–∏–∏ –ø—Ä–∏–º–µ–Ω–µ–Ω—ã —É—Å–ø–µ—à–Ω–æ!");
+                break;
+            }
         }
-        else
+        catch (Exception ex)
         {
-            Console.WriteLine(" ÕÂ Û‰‡ÎÓÒ¸ ÔÓ‰ÍÎ˛˜ËÚ¸Òˇ Í ¡ƒ");
+            logger.LogWarning($"–ù–µ —É–¥–∞–ª–æ—Å—å –ø–æ–¥–∫–ª—é—á–∏—Ç—å—Å—è –∫ MySQL. –ü–æ–ø—ã—Ç–∫–∞ {i + 1}/{retries}. –û—à–∏–±–∫–∞: {ex.Message}");
+            if (i == retries - 1)
+            {
+                logger.LogError("–í—Å–µ –ø–æ–ø—ã—Ç–∫–∏ –ø–æ–¥–∫–ª—é—á–µ–Ω–∏—è –∏—Å—á–µ—Ä–ø–∞–Ω—ã!");
+                throw;
+            }
+            Thread.Sleep(5000);
         }
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"Œ¯Ë·Í‡ ÔÓ‰ÍÎ˛˜ÂÌËˇ: {ex.Message}");
     }
 }
 

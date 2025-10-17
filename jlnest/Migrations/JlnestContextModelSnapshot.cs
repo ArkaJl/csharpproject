@@ -25,7 +25,7 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<Guid?>("CommunityId")
                         .HasColumnType("char(36)")
@@ -61,7 +61,7 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<Guid?>("CommunityId")
                         .HasColumnType("char(36)")
@@ -128,7 +128,7 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<Guid?>("AuthorId")
                         .HasColumnType("char(36)")
@@ -171,7 +171,7 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<string>("AvatarUrl")
                         .HasColumnType("text")
@@ -224,7 +224,7 @@ namespace DataAccess.Migrations
                     b.Property<Guid>("Id")
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<DateTime?>("LastActivity")
                         .HasColumnType("timestamp")
@@ -256,13 +256,13 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<Guid?>("AlbumId")
                         .HasColumnType("char(36)")
                         .HasColumnName("album_id");
 
-                    b.Property<DateTime?>("CreatedAt")
+                    b.Property<DateTime>("CreatedAt")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp")
                         .HasColumnName("created_at")
@@ -298,7 +298,7 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<Guid>("ChatId")
                         .HasColumnType("char(36)")
@@ -309,7 +309,7 @@ namespace DataAccess.Migrations
                         .HasColumnType("text")
                         .HasColumnName("content");
 
-                    b.Property<DateTime?>("CreatedAt")
+                    b.Property<DateTime>("CreatedAt")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp")
                         .HasColumnName("created_at")
@@ -341,7 +341,7 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<DateTime?>("CreatedAt")
                         .ValueGeneratedOnAdd()
@@ -382,7 +382,7 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<Guid?>("AuthorId")
                         .HasColumnType("char(36)")
@@ -443,7 +443,7 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<string>("Category")
                         .HasMaxLength(50)
@@ -519,7 +519,7 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<int>("Amount")
                         .HasColumnType("int")
@@ -561,7 +561,7 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<string>("AvatarUrl")
                         .HasColumnType("text")
@@ -637,7 +637,7 @@ namespace DataAccess.Migrations
                     b.Property<Guid>("Id")
                         .HasColumnType("char(36)")
                         .HasColumnName("id")
-                        .HasDefaultValueSql("'uuid()'");
+                        .HasDefaultValueSql("(UUID())");
 
                     b.Property<DateTime?>("LastOnline")
                         .HasColumnType("timestamp")
@@ -659,7 +659,7 @@ namespace DataAccess.Migrations
                     b.ToView("user_activity", (string)null);
                 });
 
-            modelBuilder.Entity("Domain.Models.UserInventory", b =>
+            modelBuilder.Entity("UserInventory", b =>
                 {
                     b.Property<Guid>("UserId")
                         .HasColumnType("char(36)")
@@ -875,7 +875,7 @@ namespace DataAccess.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Domain.Models.UserInventory", b =>
+            modelBuilder.Entity("UserInventory", b =>
                 {
                     b.HasOne("Domain.Models.StoreItem", "Item")
                         .WithMany("UserInventories")

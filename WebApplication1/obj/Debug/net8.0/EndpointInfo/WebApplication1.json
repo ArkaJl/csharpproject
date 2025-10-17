@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "JLNest Social Network API",
-    "description": "API для социальной сети JLNest с сообществами, чатами и магазино",
+    "description": "API ��� ���������� ���� JLNest � ������������, ������ � ��������",
     "contact": {
       "name": "JLNest Support",
       "url": "https://example.com/contact"
