@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\jlnest\\DataAccess.csproj": {}
+    "C:\\Users\\Student\\Documents\\alexeev\\ok\\csharpproject\\jlnest\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\Domain\\Domain.csproj": {
+    "C:\\Users\\Student\\Documents\\alexeev\\ok\\csharpproject\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Documents\\alexeev\\ok\\csharpproject\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Student\\Documents\\alexeev\\ok\\csharpproject\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Student\\Documents\\alexeev\\ok\\csharpproject\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\jlnest\\DataAccess.csproj": {
+    "C:\\Users\\Student\\Documents\\alexeev\\ok\\csharpproject\\jlnest\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\jlnest\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Documents\\alexeev\\ok\\csharpproject\\jlnest\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\jlnest\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\Student\\Documents\\alexeev\\ok\\csharpproject\\jlnest\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\jlnest\\obj\\",
+        "outputPath": "C:\\Users\\Student\\Documents\\alexeev\\ok\\csharpproject\\jlnest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -107,8 +107,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\Domain\\Domain.csproj"
+              "C:\\Users\\Student\\Documents\\alexeev\\ok\\csharpproject\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Student\\Documents\\alexeev\\ok\\csharpproject\\Domain\\Domain.csproj"
               }
             }
           }

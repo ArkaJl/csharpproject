@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/7b2CzfyLVo=",
+  "dgSpecHash": "YB1UeK+1WEI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Student\\Documents\\alexeev\\sas\\csharpproject\\jlnest\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Student\\Documents\\alexeev\\ok\\csharpproject\\jlnest\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Student\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Student\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

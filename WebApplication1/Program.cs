@@ -1,16 +1,46 @@
-
 using BusinessLogic.Services;
 using DataAccess.Wrapper;
 using Domain.Interfaces.Services;
 using Domain.Models;
 using Domain.Wrapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using NETCore.MailKit.Core;
 using System.Reflection;
+using System.Text;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Добавление аутентификации JWT
+var jwtKey = builder.Configuration["Jwt:Key"] ??
+    throw new InvalidOperationException("JWT Key not configured");
+var key = Encoding.ASCII.GetBytes(jwtKey);
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        ClockSkew = TimeSpan.Zero
+    };
+});
+
+builder.Services.AddAuthorization();
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
@@ -26,7 +56,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         Version = "v1",
         Title = "JLNest Social Network API",
-        Description = "API ��� ���������� ���� JLNest � ������������, ������ � ��������",
+        Description = "API для социальной сети JLNest с аутентификацией, чатами и сообществами",
         Contact = new OpenApiContact
         {
             Name = "JLNest Support",
@@ -38,7 +68,32 @@ builder.Services.AddSwaggerGen(options =>
             Url = new Uri("https://example.com/license")
         }
     });
-    //using system.reflection
+
+    // Добавление JWT авторизации в Swagger
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer"
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
@@ -48,6 +103,7 @@ builder.Services.AddDbContext<JlnestContext>(options =>
         b => b.MigrationsAssembly("DataAccess")
     ));
 
+// Регистрация сервисов
 builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserInventoryService, UserInventoryService>();
@@ -61,50 +117,13 @@ builder.Services.AddScoped<IStoreItemService, StoreItemService>();
 builder.Services.AddScoped<ITransactionService, TransactionService>();
 builder.Services.AddScoped<IMediaService, MediaService>();
 
+// Регистрация новых сервисов для аутентификации
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IEmailService, BusinessLogic.Services.EmailService>();
+
 var app = builder.Build();
 
-
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    var logger = services.GetRequiredService<ILogger<Program>>();
-    var context = services.GetRequiredService<JlnestContext>();
-    
-    logger.LogInformation("Ожидание подключения к MySQL...");
-    
-    int retries = 10;
-    for (int i = 0; i < retries; i++)
-    {
-        try
-        {
-            logger.LogInformation($"Попытка подключения к MySQL ({i + 1}/{retries})...");
-            
-            // ПРОСТАЯ ПРОВЕРКА ПОДКЛЮЧЕНИЯ
-            if (context.Database.CanConnect())
-            {
-                logger.LogInformation("Подключение к MySQL успешно!");
-                
-                // АВТОМАТИЧЕСКОЕ ПРИМЕНЕНИЕ МИГРАЦИЙ
-                logger.LogInformation("Применение миграций...");
-                context.Database.Migrate();
-                logger.LogInformation("Миграции применены успешно!");
-                break;
-            }
-        }
-        catch (Exception ex)
-        {
-            logger.LogWarning($"Не удалось подключиться к MySQL. Попытка {i + 1}/{retries}. Ошибка: {ex.Message}");
-            if (i == retries - 1)
-            {
-                logger.LogError("Все попытки подключения исчерпаны!");
-                throw;
-            }
-            Thread.Sleep(5000);
-        }
-    }
-}
-
-// Configure the HTTP request pipeline.
+// Middleware pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -112,6 +131,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication(); // Добавьте эту строку перед UseAuthorization
 app.UseAuthorization();
+
 app.MapControllers();
+
 app.Run();
