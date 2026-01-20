@@ -5,7 +5,6 @@ using Domain.Wrapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using Org.BouncyCastle.Crypto.Generators;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -80,8 +79,14 @@ namespace BusinessLogic.Services
 
             // Сохранение refresh token
             user.RefreshToken = refreshToken;
-            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(
-                _configuration.GetValue<int>("Jwt:RefreshTokenExpirationDays", 7));
+
+            // Исправлено: использование TryGetValue вместо GetValue
+            var refreshTokenDays = 7;
+            if (_configuration.GetSection("Jwt:RefreshTokenExpirationDays").Exists())
+            {
+                refreshTokenDays = int.Parse(_configuration["Jwt:RefreshTokenExpirationDays"] ?? "7");
+            }
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(refreshTokenDays);
 
             await _repository.User.Update(user);
             await _repository.SaveAsync();
@@ -109,8 +114,14 @@ namespace BusinessLogic.Services
             var newRefreshToken = GenerateRefreshToken();
 
             user.RefreshToken = newRefreshToken;
-            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(
-                _configuration.GetValue<int>("Jwt:RefreshTokenExpirationDays", 7));
+
+            // Исправлено: использование TryGetValue вместо GetValue
+            var refreshTokenDays = 7;
+            if (_configuration.GetSection("Jwt:RefreshTokenExpirationDays").Exists())
+            {
+                refreshTokenDays = int.Parse(_configuration["Jwt:RefreshTokenExpirationDays"] ?? "7");
+            }
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(refreshTokenDays);
 
             await _repository.User.Update(user);
             await _repository.SaveAsync();
@@ -206,6 +217,13 @@ namespace BusinessLogic.Services
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]!);
 
+            // Исправлено: получение времени истечения токена
+            var accessTokenMinutes = 15;
+            if (_configuration.GetSection("Jwt:AccessTokenExpirationMinutes").Exists())
+            {
+                accessTokenMinutes = int.Parse(_configuration["Jwt:AccessTokenExpirationMinutes"] ?? "15");
+            }
+
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new[]
@@ -215,8 +233,7 @@ namespace BusinessLogic.Services
                     new Claim(ClaimTypes.Email, user.Email),
                     new Claim("IsEmailConfirmed", user.IsEmailConfirmed.ToString())
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(
-                    _configuration.GetValue<int>("Jwt:AccessTokenExpirationMinutes", 15)),
+                Expires = DateTime.UtcNow.AddMinutes(accessTokenMinutes),
                 Issuer = _configuration["Jwt:Issuer"],
                 Audience = _configuration["Jwt:Audience"],
                 SigningCredentials = new SigningCredentials(
@@ -260,6 +277,13 @@ namespace BusinessLogic.Services
                 throw new SecurityTokenException("Invalid token");
 
             return principal;
+        }
+
+        public async Task<User?> GetUserByIdAsync(Guid userId)
+        {
+            return await _repository.User
+                .FindByCondition(u => u.Id == userId)
+                .FirstOrDefaultAsync();
         }
     }
 }

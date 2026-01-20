@@ -11,5 +11,6 @@ namespace Domain.Interfaces.Services
         Task<bool> ConfirmEmailAsync(string token);
         Task<bool> SendPasswordResetEmailAsync(string email);
         Task<bool> ResetPasswordAsync(string token, string newPassword);
+        Task<User?> GetUserByIdAsync(Guid userId);
     }
 }

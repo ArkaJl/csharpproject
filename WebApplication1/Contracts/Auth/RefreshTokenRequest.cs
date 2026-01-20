@@ -1,8 +1,8 @@
 ﻿namespace WebApplication1.Contracts.Auth
 {
-    public class LoginRequest
+    public class RefreshTokenRequest
     {
-        public string Email { get; set; } = null!;
-        public string Password { get; set; } = null!;
+        public string AccessToken { get; set; } = null!;
+        public string RefreshToken { get; set; } = null!;
     }
 }

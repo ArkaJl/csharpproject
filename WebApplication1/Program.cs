@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using NETCore.MailKit.Core;
 using System.Reflection;
 using System.Text;
 using System.Text.Json.Serialization;
@@ -119,7 +118,7 @@ builder.Services.AddScoped<IMediaService, MediaService>();
 
 // Регистрация новых сервисов для аутентификации
 builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddScoped<IEmailService, BusinessLogic.Services.EmailService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 var app = builder.Build();
 

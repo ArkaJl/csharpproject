@@ -722,3 +722,9 @@ C:\Users\Student\Documents\alexeev\ok\csharpproject\WebApplication1\obj\Debug\ne
 C:\Users\Student\Documents\alexeev\ok\csharpproject\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\Student\Documents\alexeev\ok\csharpproject\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Student\Documents\alexeev\ok\csharpproject\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\My STORAGE\работа\csharp\csharpproject\WebApplication1\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\My STORAGE\работа\csharp\csharpproject\WebApplication1\bin\Debug\net8.0\MailKit.dll
+C:\My STORAGE\работа\csharp\csharpproject\WebApplication1\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\My STORAGE\работа\csharp\csharpproject\WebApplication1\bin\Debug\net8.0\MimeKit.dll
+C:\My STORAGE\работа\csharp\csharpproject\WebApplication1\bin\Debug\net8.0\NETCore.MailKit.dll
+C:\My STORAGE\работа\csharp\csharpproject\WebApplication1\bin\Debug\net8.0\BouncyCastle.Crypto.dll
